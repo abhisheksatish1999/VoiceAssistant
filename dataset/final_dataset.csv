@@ -1,0 +1,2379 @@
+Questions,Answers
+Python Program to Print Hello world!,"# This program prints Hello, world!
+
+print('Hello, world!')
+"
+Python Program to Add Two Numbers,"# This program adds two numbers
+
+num1 = 1.5
+num2 = 6.3
+
+# Add two numbers
+sum = num1 + num2
+
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+"
+Python Program to Find the Square Root,"# Python Program to calculate the square root
+
+# Note: change this value for a different result
+num = 8 
+
+# To take the input from the user
+#num = float(input('Enter a number: '))
+
+num_sqrt = num ** 0.5
+print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))
+"
+Python Program to Calculate the Area of a Triangle,"# Python Program to find the area of triangle
+
+a = 5
+b = 6
+c = 7
+
+# Uncomment below to take inputs from the user
+# a = float(input('Enter first side: '))
+# b = float(input('Enter second side: '))
+# c = float(input('Enter third side: '))
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)"
+Python Program to Solve Quadratic Equation,"# Solve the quadratic equation ax**2 + bx + c = 0
+
+# import complex math module
+import cmath
+
+a = 1
+b = 5
+c = 6
+
+# calculate the discriminant
+d = (b**2) - (4*a*c)
+
+# find two solutions
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(sol1,sol2))"
+Python Program to Swap Two Variables,"# Python program to swap two variables
+
+x = 5
+y = 10
+
+# To take inputs from the user
+#x = input('Enter value of x: ')
+#y = input('Enter value of y: ')
+
+# create a temporary variable and swap the values
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: {}'.format(x))
+print('The value of y after swapping: {}'.format(y))
+"
+Python Program to Generate a Random Number,"# Program to generate a random number between 0 and 9
+
+# importing the random module
+import random
+
+print(random.randint(0,9))
+"
+Python Program to Convert Kilometers to Miles,"# Taking kilometers input from the user
+kilometers = float(input(""Enter value in kilometers: ""))
+
+# conversion factor
+conv_fac = 0.621371
+
+# calculate miles
+miles = kilometers * conv_fac
+print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
+"
+Python Program to Convert Celsius To Fahrenheit,"# Python Program to convert temperature in celsius to fahrenheit
+
+# change this value for a different result
+celsius = 37.5
+
+# calculate fahrenheit
+fahrenheit = (celsius * 1.8) + 32
+print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
+"
+"Python Program to Check if a Number is Positive, Negative or 0","num = float(input(""Enter a number: ""))
+if num > 0:
+   print(""Positive number"")
+elif num == 0:
+   print(""Zero"")
+else:
+   print(""Negative number"")
+"
+Python Program to Check if a Number is Odd or Even,"# Python program to check if the input number is odd or even.
+# A number is even if division by 2 gives a remainder of 0.
+# If the remainder is 1, it is an odd number.
+
+num = int(input(""Enter a number: ""))
+if (num % 2) == 0:
+   print(""{0} is Even"".format(num))
+else:
+   print(""{0} is Odd"".format(num))"
+Python Program to Check Leap Year,"# Python program to check if year is a leap year or not
+
+year = 2000
+
+# To get year (integer input) from the user
+# year = int(input(""Enter a year: ""))
+
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print(""{0} is a leap year"".format(year))
+       else:
+           print(""{0} is not a leap year"".format(year))
+   else:
+       print(""{0} is a leap year"".format(year))
+else:
+   print(""{0} is not a leap year"".format(year))
+"
+Python Program to Find the Largest Among Three Numbers,"# Python program to find the largest number among the three input numbers
+
+# change the values of num1, num2 and num3
+# for a different result
+num1 = 10
+num2 = 14
+num3 = 12
+
+# uncomment following lines to take three numbers from user
+#num1 = float(input(""Enter first number: ""))
+#num2 = float(input(""Enter second number: ""))
+#num3 = float(input(""Enter third number: ""))
+
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+
+print(""The largest number is"", largest)
+"
+Python Program to Check Prime Number,"# Program to check if a number is prime or not
+
+num = 29
+
+# To take input from the user
+#num = int(input(""Enter a number: ""))
+
+# define a flag variable
+flag = False
+
+# prime numbers are greater than 1
+if num > 1:
+    # check for factors
+    for i in range(2, num):
+        if (num % i) == 0:
+            # if factor is found, set flag to True
+            flag = True
+            # break out of loop
+            break
+
+# check if flag is True
+if flag:
+    print(num, ""is not a prime number"")
+else:
+    print(num, ""is a prime number"")"
+Python Program to Print all Prime Numbers in an Interval,"# Python program to display all the prime numbers within an interval
+
+lower = 900
+upper = 1000
+
+print(""Prime numbers between"", lower, ""and"", upper, ""are:"")
+
+for num in range(lower, upper + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)"
+Python Program to Find the Factorial of a Number,"# Python program to find the factorial of a number provided by the user.
+
+# change the value for a different result
+num = 7
+
+# To take input from the user
+#num = int(input(""Enter a number: ""))
+
+factorial = 1
+
+# check if the number is negative, positive or zero
+if num < 0:
+   print(""Sorry, factorial does not exist for negative numbers"")
+elif num == 0:
+   print(""The factorial of 0 is 1"")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print(""The factorial of"",num,""is"",factorial)
+"
+Python Program to Display the multiplication Table,"# Multiplication table (from 1 to 10) in Python
+
+num = 12
+
+# To take input from the user
+# num = int(input(""Display multiplication table of? ""))
+
+# Iterate 10 times from i = 1 to 10
+for i in range(1, 11):
+   print(num, 'x', i, '=', num*i)
+"
+Python Program to Print the Fibonacci sequence,"# Program to display the Fibonacci sequence up to n-th term
+
+nterms = int(input(""How many terms? ""))
+
+# first two terms
+n1, n2 = 0, 1
+count = 0
+
+# check if the number of terms is valid
+if nterms <= 0:
+   print(""Please enter a positive integer"")
+elif nterms == 1:
+   print(""Fibonacci sequence upto"",nterms,"":"")
+   print(n1)
+else:
+   print(""Fibonacci sequence:"")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1"
+Python Program to Check Armstrong Number,"# Python program to check if the number is an Armstrong number or not
+
+# take input from the user
+num = int(input(""Enter a number: ""))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,""is an Armstrong number"")
+else:
+   print(num,""is not an Armstrong number"")
+"
+Python Program to Find Armstrong Number in an Interval,"# Program to check Armstrong numbers in a certain interval
+
+lower = 100
+upper = 2000
+
+for num in range(lower, upper + 1):
+
+   # order of number
+   order = len(str(num))
+    
+   # initialize sum
+   sum = 0
+
+   temp = num
+   while temp > 0:
+       digit = temp % 10
+       sum += digit ** order
+       temp //= 10
+
+   if num == sum:
+       print(num)
+"
+Python Program to Find the Sum of Natural Numbers,"# Sum of natural numbers up to num
+
+num = 16
+
+if num < 0:
+   print(""Enter a positive number"")
+else:
+   sum = 0
+   # use while loop to iterate until zero
+   while(num > 0):
+       sum += num
+       num -= 1
+   print(""The sum is"", sum)
+"
+Python Program To Display Powers of 2 Using Anonymous Function,"# Display the powers of 2 using anonymous function
+
+terms = 10
+
+# Uncomment code below to take input from the user
+# terms = int(input(""How many terms? ""))
+
+# use anonymous function
+result = list(map(lambda x: 2 ** x, range(terms)))
+
+print(""The total terms are:"",terms)
+for i in range(terms):
+   print(""2 raised to power"",i,""is"",result[i])
+"
+Python Program to Find Numbers Divisible by Another Number,"# Take a list of numbers
+my_list = [12, 65, 54, 39, 102, 339, 221,]
+
+# use anonymous function to filter
+result = list(filter(lambda x: (x % 13 == 0), my_list))
+
+# display the result
+print(""Numbers divisible by 13 are"",result)
+"
+"Python Program to Convert Decimal to Binary, Octal and Hexadecimal","# Python program to convert decimal into other number systems
+dec = 344
+
+print(""The decimal value of"", dec, ""is:"")
+print(bin(dec), ""in binary."")
+print(oct(dec), ""in octal."")
+print(hex(dec), ""in hexadecimal."")
+"
+Python Program to Find ASCII Value of Character,"# Program to find the ASCII value of the given character
+
+c = 'p'
+print(""The ASCII value of '"" + c + ""' is"", ord(c))
+"
+Python Program to Find (highest common factor) or GCD(greatest common divisor),"# Python program to find H.C.F of two numbers
+
+# define a function
+def compute_hcf(x, y):
+
+# choose the smaller number
+    if x > y:
+        smaller = y
+    else:
+        smaller = x
+    for i in range(1, smaller+1):
+        if((x % i == 0) and (y % i == 0)):
+            hcf = i 
+    return hcf
+
+num1 = 54 
+num2 = 24
+
+print(""The H.C.F. is"", compute_hcf(num1, num2))
+"
+Python Program to Find LCM(Least common multiple),"# Python Program to find the L.C.M. of two input number
+
+def compute_lcm(x, y):
+
+   # choose the greater number
+   if x > y:
+       greater = x
+   else:
+       greater = y
+
+   while(True):
+       if((greater % x == 0) and (greater % y == 0)):
+           lcm = greater
+           break
+       greater += 1
+
+   return lcm
+
+num1 = 54
+num2 = 24
+
+print(""The L.C.M. is"", compute_lcm(num1, num2))"
+Python Program to Find the Factors of a Number,"# Python Program to find the factors of a number
+
+# This function computes the factor of the argument passed
+def print_factors(x):
+   print(""The factors of"",x,""are:"")
+   for i in range(1, x + 1):
+       if x % i == 0:
+           print(i)
+
+num = 320
+
+print_factors(num)
+"
+Python Program to Make a Simple Calculator,"# Program make a simple calculator
+
+# This function adds two numbers
+def add(x, y):
+    return x + y
+
+# This function subtracts two numbers
+def subtract(x, y):
+    return x - y
+
+# This function multiplies two numbers
+def multiply(x, y):
+    return x * y
+
+# This function divides two numbers
+def divide(x, y):
+    return x / y
+
+
+print(""Select operation."")
+print(""1.Add"")
+print(""2.Subtract"")
+print(""3.Multiply"")
+print(""4.Divide"")
+
+while True:
+    # Take input from the user
+    choice = input(""Enter choice(1/2/3/4): "")
+
+    # Check if choice is one of the four options
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input(""Enter first number: ""))
+        num2 = float(input(""Enter second number: ""))
+
+        if choice == '1':
+            print(num1, ""+"", num2, ""="", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, ""-"", num2, ""="", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, ""*"", num2, ""="", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, ""/"", num2, ""="", divide(num1, num2))
+        break
+    else:
+        print(""Invalid Input"")
+"
+Python Program to Shuffle Deck of Cards,"# Python program to shuffle a deck of card
+
+# importing modules
+import itertools, random
+
+# make a deck of cards
+deck = list(itertools.product(range(1,14),['Spade','Heart','Diamond','Club']))
+
+# shuffle the cards
+random.shuffle(deck)
+
+# draw five cards
+print(""You got:"")
+for i in range(5):
+   print(deck[i][0], ""of"", deck[i][1])
+"
+Python Program to Display Calendar,"# Program to display calendar of the given month and year
+
+# importing calendar module
+import calendar
+
+yy = 2014  # year
+mm = 11    # month
+
+# To take month and year input from the user
+# yy = int(input(""Enter year: ""))
+# mm = int(input(""Enter month: ""))
+
+# display the calendar
+print(calendar.month(yy, mm))
+"
+Python Program to Display Fibonacci Sequence Using Recursion,"# Python program to display the Fibonacci sequence
+
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+# check if the number of terms is valid
+if nterms <= 0:
+   print(""Plese enter a positive integer"")
+else:
+   print(""Fibonacci sequence:"")
+   for i in range(nterms):
+       print(recur_fibo(i))
+"
+Python Program to Find Sum of Natural Numbers Using Recursion,"# Python program to find the sum of natural using recursive function
+
+def recur_sum(n):
+   if n <= 1:
+       return n
+   else:
+       return n + recur_sum(n-1)
+
+# change this value for a different result
+num = 16
+
+if num < 0:
+   print(""Enter a positive number"")
+else:
+   print(""The sum is"",recur_sum(num))
+"
+Python Program to Find Factorial of Number Using Recursion,"# Factorial of a number using recursion
+
+def recur_factorial(n):
+   if n == 1:
+       return n
+   else:
+       return n*recur_factorial(n-1)
+
+num = 7
+
+# check if the number is negative
+if num < 0:
+   print(""Sorry, factorial does not exist for negative numbers"")
+elif num == 0:
+   print(""The factorial of 0 is 1"")
+else:
+   print(""The factorial of"", num, ""is"", recur_factorial(num))
+"
+Python Program to Convert Decimal to Binary Using Recursion,"# Function to print binary number using recursion
+def convertToBinary(n):
+   if n > 1:
+       convertToBinary(n//2)
+   print(n % 2,end = '')
+
+# decimal number
+dec = 34
+
+convertToBinary(dec)
+print()
+"
+Python Program to Add Two Matrices,"# Program to add two matrices using nested loop
+
+X = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+
+Y = [[5,8,1],
+    [6,7,3],
+    [4,5,9]]
+
+result = [[0,0,0],
+         [0,0,0],
+         [0,0,0]]
+
+# iterate through rows
+for i in range(len(X)):
+   # iterate through columns
+   for j in range(len(X[0])):
+       result[i][j] = X[i][j] + Y[i][j]
+
+for r in result:
+   print(r)"
+Python Program to Transpose a Matrix,"# Program to transpose a matrix using a nested loop
+
+X = [[12,7],
+    [4 ,5],
+    [3 ,8]]
+
+result = [[0,0,0],
+         [0,0,0]]
+
+# iterate through rows
+for i in range(len(X)):
+   # iterate through columns
+   for j in range(len(X[0])):
+       result[j][i] = X[i][j]
+
+for r in result:
+   print(r)
+"
+Python Program to Multiply Two Matrices,"# Program to multiply two matrices using nested loops
+
+# 3x3 matrix
+X = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+# 3x4 matrix
+Y = [[5,8,1,2],
+    [6,7,3,0],
+    [4,5,9,1]]
+# result is 3x4
+result = [[0,0,0,0],
+         [0,0,0,0],
+         [0,0,0,0]]
+
+# iterate through rows of X
+for i in range(len(X)):
+   # iterate through columns of Y
+   for j in range(len(Y[0])):
+       # iterate through rows of Y
+       for k in range(len(Y)):
+           result[i][j] += X[i][k] * Y[k][j]
+
+for r in result:
+   print(r)
+"
+Python Program to Check Whether a String is Palindrome or Not,"# Program to check if a string is palindrome or not
+
+my_str = 'aIbohPhoBiA'
+
+# make it suitable for caseless comparison
+my_str = my_str.casefold()
+
+# reverse the string
+rev_str = reversed(my_str)
+
+# check if the string is equal to its reverse
+if list(my_str) == list(rev_str):
+   print(""The string is a palindrome."")
+else:
+   print(""The string is not a palindrome."")
+"
+Python Program to Remove Punctuations From a String,"# define punctuation
+punctuations = '''!()-[]{};:'""\,<>./?@#$%^&*_~'''
+
+my_str = ""Hello!!!, he said ---and went.""
+
+# To take input from the user
+# my_str = input(""Enter a string: "")
+
+# remove punctuation from the string
+no_punct = """"
+for char in my_str:
+   if char not in punctuations:
+       no_punct = no_punct + char
+
+# display the unpunctuated string
+print(no_punct)
+"
+Python Program to Sort Words in Alphabetic Order,"# Program to sort alphabetically the words form a string provided by the user
+
+my_str = ""Hello this Is an Example With cased letters""
+
+# To take input from the user
+#my_str = input(""Enter a string: "")
+
+# breakdown the string into a list of words
+words = [word.lower() for word in my_str.split()]
+
+# sort the list
+words.sort()
+
+# display the sorted words
+
+print(""The sorted words are:"")
+for word in words:
+   print(word)
+"
+Python Program to Illustrate Different Set Operations,"# Program to perform different set operations like in mathematics
+
+# define three sets
+E = {0, 2, 4, 6, 8};
+N = {1, 2, 3, 4, 5};
+
+# set union
+print(""Union of E and N is"",E | N)
+
+# set intersection
+print(""Intersection of E and N is"",E & N)
+
+# set difference
+print(""Difference of E and N is"",E - N)
+
+# set symmetric difference
+print(""Symmetric difference of E and N is"",E ^ N)
+"
+Python Program to Count the Number of Each Vowel,"# Program to count the number of each vowels
+
+# string of vowels
+vowels = 'aeiou'
+
+ip_str = 'Hello, have you tried our tutorial section yet?'
+
+# make it suitable for caseless comparisions
+ip_str = ip_str.casefold()
+
+# make a dictionary with each vowel a key and value 0
+count = {}.fromkeys(vowels,0)
+
+# count the vowels
+for char in ip_str:
+   if char in count:
+       count[char] += 1
+
+print(count)
+"
+Python Program to Merge Mails,"# Python program to mail merger
+# Names are in the file names.txt
+# Body of the mail is in body.txt
+
+# open names.txt for reading
+with open(""names.txt"", 'r', encoding='utf-8') as names_file:
+
+    # open body.txt for reading
+    with open(""body.txt"", 'r', encoding='utf-8') as body_file:
+
+        # read entire content of the body
+        body = body_file.read()
+
+        # iterate over names
+        for name in names_file:
+            mail = ""Hello "" + name.strip() + ""\n"" + body
+
+            # write the mails to individual files
+            with open(name.strip()+"".txt"", 'w', encoding='utf-8') as mail_file:
+                mail_file.write(mail)"
+Python Program to Find the Size (Resolution) of a Image,"def jpeg_res(filename):
+   """"""""This function prints the resolution of the jpeg image file passed into it""""""
+
+   # open image for reading in binary mode
+   with open(filename,'rb') as img_file:
+
+       # height of image (in 2 bytes) is at 164th position
+       img_file.seek(163)
+
+       # read the 2 bytes
+       a = img_file.read(2)
+
+       # calculate height
+       height = (a[0] << 8) + a[1]
+
+       # next 2 bytes is width
+       a = img_file.read(2)
+
+       # calculate width
+       width = (a[0] << 8) + a[1]
+
+   print(""The resolution of the image is"",width,""x"",height)
+
+jpeg_res(""img1.jpg"")"
+Python Program to Find Hash of File,"# Python rogram to find the SHA-1 message digest of a file
+
+# importing the hashlib module
+import hashlib
+
+def hash_file(filename):
+   """"""""This function returns the SHA-1 hash
+   of the file passed into it""""""
+
+   # make a hash object
+   h = hashlib.sha1()
+
+   # open file for reading in binary mode
+   with open(filename,'rb') as file:
+
+       # loop till the end of the file
+       chunk = 0
+       while chunk != b'':
+           # read only 1024 bytes at a time
+           chunk = file.read(1024)
+           h.update(chunk)
+
+   # return the hex representation of digest
+   return h.hexdigest()
+
+message = hash_file(""track1.mp3"")
+print(message)"
+Python Program to Create Pyramid Patterns,"rows = int(input(""Enter number of rows: ""))
+
+for i in range(rows):
+    for j in range(i+1):
+        print(""* "", end="""")
+    print(""\n"")"
+Python Program to Merge Two Dictionaries,"dict_1 = {1: 'a', 2: 'b'}
+dict_2 = {2: 'c', 4: 'd'}
+
+print(dict_1|dict_2)"
+Python Program to Safely Create a Nested Directory,"from pathlib import Path
+Path(""/root/dirA/dirB"").mkdir(parents=True, exist_ok=True)"
+Python Program to Access Index of a List Using for Loop,"my_list = [21, 44, 35, 11]
+
+for index, val in enumerate(my_list):
+    print(index, val)"
+Python Program to Make a Flattened List from Nested List,"my_list = [[1], [2, 3], [4, 5, 6, 7]]
+
+flat_list = [num for sublist in my_list for num in sublist]
+print(flat_list)"
+List Slicing in Python,"my_list = [1, 2, 3, 4, 5]
+
+print(my_list[:])"
+Python Program to Iterate Over Dictionaries Using for Loop,"dt = {'a': 'juice', 'b': 'grill', 'c': 'corn'}
+
+for key, value in dt.items():
+    print(key, value)"
+Python Program to Sort a Dictionary by Value,"dt = {5:4, 1:6, 6:3}
+
+sorted_dt = {key: value for key, value in sorted(dt.items(), key=lambda item: item[1])}
+
+print(sorted_dt)"
+Python Program to Check If a List is Empty,"my_list = []
+if not my_list:
+    print(""the list is empty"")"
+Python Program to Catch Multiple Exceptions in One Line,"string = input()
+
+try:
+    num = int(input())
+    print(string+num)
+except (TypeError, ValueError) as e:
+    print€"
+Python Program To Copy a File,"from shutil import copyfile
+copyfile(""/root/a.txt"", ""/root/b.txt"")"
+Python Program Concatenate Two Lists,"list_1 = [1, 'a']
+list_2 = [3, 4, 5]
+
+list_joined = list_1 + list_2
+print(list_joined)"
+Python Program to Check if a Key is Already Present in a Dictionary,"my_dict = {1: 'a', 2: 'b', 3: 'c'}
+
+if 2 in my_dict:
+    print(""present"")"
+Python Program to Split a List Into Evenly Sized Chunks,"def split(list_a, chunk_size):
+
+    for i in range(0, len(list_a), chunk_size):
+        yield list_a[i:i + chunk_size]
+
+chunk_size = 2
+my_list = [1,2,3,4,5,6,7,8,9]
+print(list(split(my_list, chunk_size)))"
+Python Program to Parse a String to a Float or Int,"balance_str = ""1500""
+balance_int = int(balance_str)
+
+# print the type
+print(type(balance_int))
+
+# print the value
+print(balance_int)"
+Python Program to Print Colored Text to the Terminal,print('\x1b[38;2;5;86;243m' + 'Programiz' + '\x1b[0m')
+Python Program to Convert String to Datetime,"from datetime import datetime
+
+my_date_string = ""Mar 11 2011 11:31AM""
+
+datetime_object = datetime.strptime(my_date_string, '%b %d %Y %I:%M%p')
+
+print(type(datetime_object))
+print(datetime_object)"
+Python Program to Get the Last Element of the List,"my_list = ['a', 'b', 'c', 'd', 'e']
+
+# print the last element
+print(my_list[-1])"
+Python Program to Get a Substring of a String,"my_string = ""I love python.""
+
+# prints ""love""
+print(my_string[2:6])
+
+# prints ""love python.""
+print(my_string[2:])
+
+# prints ""I love python""
+print(my_string[:-1])"
+Python Program to Print Output Without a Newline,"# print each statement on a new line
+print(""Python"")
+print(""is easy to learn."")
+
+# new line
+print()
+
+# print both the statements on a single line
+print(""Python"", end="" "")
+print(""is easy to learn."")"
+Python Program Read a File Line by Line Into a List,"with open(""data_file.txt"") as f:
+    content_list = f.readlines()
+
+# print the list
+print(content_list)
+
+# remove new line characters
+content_list = [x.strip() for x in content_list]
+print(content_list)"
+Python Program to Randomly Select an Element From the List,"import random
+
+my_list = [1, 'a', 32, 'c', 'd', 31]
+print(random.choice(my_list))"
+Python Program to Check If a String Is a Number (Float),"def isfloat(num):
+    try:
+        float(num)
+        return True
+    except ValueError:
+        return False
+
+print(isfloat('s12'))
+print(isfloat('1.123'))"
+Python Program to Count the Occurrence of an Item in a List,"freq = ['a', 1, 'a', 4, 3, 2, 'a'].count('a')
+print(freq)"
+Python Program to Append to a File,"with open(""my_file.txt"", ""a"") as f:
+   f.write(""new text"")"
+Python Program to Delete an Element From a Dictionary,"my_dict = {31: 'a', 21: 'b', 14: 'c'}
+
+del my_dict[31]
+
+print(my_dict)"
+Python Program to Create a Long Multiline String,"my_string = '''The only way to
+learn to program is
+by writing code.'''
+
+print(my_string)"
+Python Program to Extract Extension From the File Name,"import os
+file_details = os.path.splitext('/path/file.ext')
+print(file_details)
+print(file_details[1])"
+Python Program to Measure the Elapsed Time in Python,"import time
+
+start = time.time()
+
+print(23*2.3)
+
+end = time.time()
+print(end - start)"
+Python Program to Get the Class Name of an Instance,"class Vehicle:
+    def name(self, name):
+        return name
+
+print(v.__class__.__name__)"
+Python Program to Convert Two Lists Into a Dictionary,"index = [1, 2, 3]
+languages = ['python', 'c', 'c++']
+
+dictionary = dict(zip(index, languages))
+print(dictionary)"
+Python Program to Differentiate Between type() and isinstance(),"class Polygon:
+    def sides_no(self):
+        pass
+
+class Triangle(Polygon):
+    def area(self):
+        pass
+
+obj_polygon = Polygon()
+obj_triangle = Triangle()
+
+print(type(obj_triangle) == Triangle)    # true
+print(type(obj_triangle) == Polygon)     # false
+
+print(isinstance(obj_polygon, Polygon))  # true
+print(isinstance(obj_triangle, Polygon)) # true"
+Python Program to Trim Whitespace From a String,"my_string = "" Python ""
+
+print(my_string.strip())"
+Python Program to Get the File Name From the File Path,"import os
+
+# file name with extension
+file_name = os.path.basename('/root/file.ext')
+
+# file name without extension
+print(os.path.splitext(file_name)[0])"
+Python Program to Represent enum,"from enum import Enum
+
+class Day(Enum):
+    MONDAY = 1
+    TUESDAY = 2
+    WEDNESDAY = 3
+
+# print the enum member
+print(Day.MONDAY)
+
+# get the name of the enum member
+print(Day.MONDAY.name)
+
+# get the value of the enum member
+print(Day.MONDAY.value)"
+Python Program to Return Multiple Values From a Function,"def name():
+    return ""John"",""Armin""
+
+# print the tuple with the returned values
+print(name())
+
+# get the individual items
+name_1, name_2 = name()
+print(name_1, name_2)"
+Python Program to Get Line Count of a File,"def file_len(fname):
+    with open(fname) as f:
+        for i, l in enumerate(f):
+            pass
+    return i + 1
+
+print(file_len(""my_file.txt""))"
+"Python Program to Differentiate Between del, remove, and pop on a List","my_list = [1, 2, 3, 4]
+
+del my_list[1]
+
+print(my_list)"
+Python Program to Find All File with .txt Extension Present Inside a Directory,"import glob, os
+
+os.chdir(""my_dir"")
+
+for file in glob.glob(""*.txt""):
+    print(file)"
+Python Program to Get File Creation and Modification Date,"import os.path, time
+
+file = pathlib.Path('abc.py')
+print(""Last modification time: %s"" % time.ctime(os.path.getmtime(file)))
+print(""Last metadata change time or path creation time: %s"" % time.ctime(os.path.getctime(file)))"
+Python Program to Get the Full Path of the Current Working Directory,"import pathlib
+
+// path of the given file
+print(pathlib.Path(""my_file.txt"").parent.absolute())
+
+// current working directory
+print(pathlib.Path().absolute())"
+Python Program to Iterate Through Two Lists in Parallel,"list_1 = [1, 2, 3, 4]
+list_2 = ['a', 'b', 'c']
+
+for i, j in zip(list_1, list_2):
+    print(i, j)"
+Python Program to Check the File Size,"import os
+
+file_stat = os.stat('my_file.txt')
+print(file_stat.st_size)"
+Python Program to Reverse a Number,"num = 1234
+reversed_num = 0
+
+while num != 0:
+    digit = num % 10
+    reversed_num = reversed_num * 10 + digit
+    num //= 10
+
+print(""Reversed Number: "" + str(reversed_num))"
+Python Program to Compute the Power of a Number,"base = 3
+exponent = 4
+
+result = 1
+
+while exponent != 0:
+    result *= base
+    exponent-=1
+
+print(""Answer = "" + str(result))"
+Python Program to Count the Number of Digits Present In a Number,"num = 3452
+count = 0
+
+while num != 0:
+    num //= 10
+    count += 1
+
+print(""Number of digits: "" + str(count))"
+Python Program to Check If Two Strings are Anagram,"str1 = ""Race""
+str2 = ""Care""
+
+# convert both the strings into lowercase
+str1 = str1.lower()
+str2 = str2.lower()
+
+# check if length is same
+if(len(str1) == len(str2)):
+
+    # sort the strings
+    sorted_str1 = sorted(str1)
+    sorted_str2 = sorted(str2)
+
+    # if sorted char arrays are same
+    if(sorted_str1 == sorted_str2):
+        print(str1 + "" and "" + str2 + "" are anagram."")
+    else:
+        print(str1 + "" and "" + str2 + "" are not anagram."")
+
+else:
+    print(str1 + "" and "" + str2 + "" are not anagram."")"
+Python Program to Capitalize the First Character of a String,"my_string = ""programiz is Lit""
+
+print(my_string[0].upper() + my_string[1:])"
+Python Program to Compute all the Permutation of the String,"def get_permutation(string, i=0):
+
+    if i == len(string):     
+        print("""".join(string))
+
+    for j in range(i, len(string)):
+
+        words = [c for c in string]
+   
+        # swap
+        words[i], words[j] = words[j], words[i]
+     
+        get_permutation(words, i + 1)
+
+print(get_permutation('yup'))"
+Python Program to Create a Countdown Timer,"import time
+
+def countdown(time_sec):
+    while time_sec:
+        mins, secs = divmod(time_sec, 60)
+        timeformat = '{:02d}:{:02d}'.format(mins, secs)
+        print(timeformat, end='\r')
+        time.sleep(1)
+        time_sec -= 1
+
+    print(""stop"")
+
+countdown(5)"
+Python Program to Count the Number of Occurrence of a Character in String,"count = 0
+
+my_string = ""Programiz""
+my_char = ""r""
+
+for i in my_string:
+    if i == my_char:
+        count += 1
+
+print(count)"
+Python Program to Remove Duplicate Element From a List,"list_1 = [1, 2, 1, 4, 6]
+
+print(list(set(list_1)))"
+Python Program to Convert Bytes to a String,"print(b'Easy \xE2\x9C\x85'.decode(""utf-8""))"
+What is Python?,"Python is an interpreted, interactive, object-oriented programming
+language.  It incorporates modules, exceptions, dynamic typing, very
+high level dynamic data types, and classes.  It supports multiple
+programming paradigms beyond object-oriented programming, such as
+procedural and functional programming.
+"
+What is the Python Software Foundation?,"The Python Software Foundation is an independent non-profit
+organization that holds the copyright on Python versions 2.1 and
+newer.  "
+Are there copyright restrictions on the use of Python?,"You can do anything you want with the source, as long as you leave the
+copyrights in and display those copyrights in any documentation about
+Python that you produce.  
+"
+What is Python good for?,"Python is a high-level general-purpose programming language that can
+be applied to many different classes of problems."
+How do I obtain a copy of the Python source?,"The latest Python source distribution is always available from
+python.org, at https://www.python.org/downloads/.  The latest
+development sources can be obtained at
+https://github.com/python/cpython/.
+
+
+
+"
+How do I get documentation on Python?,"The standard documentation for the current stable version of Python is
+available at https://docs.python.org/3/.  PDF, plain text, and
+downloadable HTML versions are also available at
+https://docs.python.org/3/download.html."
+I've never programmed before. Is there a Python tutorial?,"
+There are numerous tutorials and books available.  The standard
+documentation includes The Python Tutorial.
+
+Consult the Beginner's Guide to find information for beginning Python
+programmers, including lists of tutorials."
+Is there a newsgroup or mailing list devoted to Python?,"There is a newsgroup, *comp.lang.python*, and a mailing list, python-
+list.  The newsgroup and mailing list are gatewayed into each other --
+if you can read news it's unnecessary to subscribe to the mailing
+list. *comp.lang.python* is high-traffic, receiving hundreds of
+postings every day, and Usenet readers are often more able to cope
+with this volume.
+"
+How do I get a beta test version of Python?,"Alpha and beta releases are available from
+https://www.python.org/downloads/.  All releases are announced on the
+comp.lang.python and comp.lang.python.announce newsgroups and on the
+Python home page at https://www.python.org/; an RSS feed of news is
+available."
+How do I submit bug reports and patches for Python?,"To report a bug or submit a patch, please use the Roundup installation
+at https://bugs.python.org/.
+"
+Are there any books on Python?,"Yes, there are many, and more are being published.  See the python.org
+wiki at https://wiki.python.org/moin/PythonBooks for a list.
+"
+Where in the world is python located?,"The Python project's infrastructure is located all over the world and
+is managed by the Python Infrastructure Team. "
+Why is it called Python?,"When Guido van Rossum began implementing Python,  he was also reading
+the published scripts from ""Monty Python's Flying Circus"", a BBC
+comedy series from the 1970s.  Van Rossum thought he needed a name
+that was short, unique, and slightly mysterious, so he decided to call
+the language Python."
+How stable is Python?,"Very stable.  New, stable releases have been coming out roughly every
+6 to 18 months since 1991, and this seems likely to continue.  As of
+version 3.9, Python will have a major new release every 12 months
+(**PEP 602**).
+
+"
+How many people are using Python?,"There are probably millions of users, though it's difficult to obtain
+an exact count.
+"
+Have any significant projects been done in Python?,"See https://www.python.org/about/success for a list of projects that
+use Python. Consulting the proceedings for past Python conferences
+will reveal contributions from many different companies and
+organizations.
+
+"
+What new developments are expected for Python in the future?,"See https://www.python.org/dev/peps/ for the Python Enhancement
+Proposals (PEPs). PEPs are design documents describing a suggested new
+feature for Python, providing a concise technical specification and a
+rationale.  Look for a PEP titled ""Python X.Y Release Schedule"", where
+X.Y is a version that hasn't been publicly released yet.
+"
+Is it reasonable to propose incompatible changes to Python?,"In general, no.  There are already millions of lines of Python code
+around the world, so any change in the language that invalidates more
+than a very small fraction of existing programs has to be frowned
+upon.  "
+Is Python a good language for beginning programmers?,"Yes.
+Python has a very simple and consistent syntax and a large
+standard library and, most importantly, using Python in a beginning
+programming course lets students concentrate on important programming
+skills such as problem decomposition and data type design.  With
+Python, students can be quickly introduced to basic concepts such as
+loops and procedures.  T"
+Why does Python use indentation for grouping of statements?,"Guido van Rossum believes that using indentation for grouping is
+extremely elegant and contributes a lot to the clarity of the average
+Python program. Most people learn to love this feature after a while.
+
+"
+Why are Python strings immutable?,"There are several advantages.
+
+One is performance: knowing that a string is immutable means we can
+allocate space for it at creation time, and the storage requirements
+are fixed and unchanging.  This is also one of the reasons for the
+distinction between tuples and lists.
+
+Another advantage is that strings in Python are considered as
+""elemental"" as numbers.  No amount of activity will change the value 8
+to anything else, and in Python, no amount of activity will change the
+string ""eight"" to anything else."
+Why must 'self' be used explicitly in method definitions and calls?,"
+First, it's more obvious that you are using a method or instance
+attribute instead of a local variable.  
+
+Second, it means that no special syntax is necessary if you want to
+explicitly reference or call the method from a particular class. 
+
+"
+Why can't I use an assignment in an expression?,"Starting in Python 3.8, you can!
+
+Assignment expressions using the walrus operator *:=* assign a
+variable in an expression: while chunk := fp.read(200): print(chunk)"
+Why does Python use methods for some functionality like list.index()  but functions for other like len(list)?,"For some operations, prefix notation just reads better than
+   postfix -- prefix (and infix!) operations have a long tradition in
+   mathematics which likes notations where the visuals help the
+   mathematician thinking about a problem. Compare the easy with which
+   we rewrite a formula like x*(a+b) into x*a + x*b to the clumsiness
+   of doing the same thing using a raw OO notation."
+Why is join() a string method instead of a list or tuple method?,"Strings became much more like other standard types starting in Python
+1.6, when methods were added which give the same functionality that
+has always been available using the functions of the string module.
+Most of these new methods have been widely accepted, but the one which
+appears to make some programmers feel uncomfortable is:
+   "", "".join(['1', '2', '4', '8', '16'])
+which gives the result:   ""1, 2, 4, 8, 16""
+
+""join()"" is a string method because in using it you are telling the
+separator string to iterate over a sequence of strings and insert
+itself between adjacent elements.  This method can be used with any
+argument which obeys the rules for sequence objects, including any new
+classes you might define yourself. Similar methods exist for bytes and
+bytearray objects."
+How fast are exceptions?,"A try/except block is extremely efficient if no exceptions are raised.
+
+
+  "
+Why isn't there a switch or case statement in Python?,"You can do this easily enough with a sequence of ""if... elif...
+elif... else"". There have been some proposals for switch statement
+syntax, but there is no consensus (yet) on whether and how to do range
+tests.  "
+Can't you emulate threads in the interpreter instead of relying on an OS-specific thread implementation?,"Unfortunately, the interpreter pushes at least one C stack
+frame for each Python stack frame.  Also, extensions can call back
+into Python at almost random moments.  Therefore, a complete threads
+implementation requires thread support for C."
+Why can't lambda expressions contain statements?,"Python lambda expressions cannot contain statements because Python's
+syntactic framework can't handle statements nested inside expressions.
+However, in Python, this is not a serious problem.  Unlike lambda
+forms in other languages, where they add functionality, Python lambdas
+are only a shorthand notation if you're too lazy to define a function."
+"Can Python be compiled to machine code, C or some other language?","Cython compiles a modified version of Python with optional annotations
+into C extensions.  Nuitka is an up-and-coming compiler of Python into
+C++ code, aiming to support the full Python language. For compiling to
+Java you can consider VOC."
+How does Python manage memory?,"The details of Python memory management depend on the implementation.
+The standard implementation of Python, *CPython*, uses reference
+counting to detect inaccessible objects, and another mechanism to
+collect reference cycles, periodically executing a cycle detection
+algorithm which looks for inaccessible cycles and deletes the objects
+involved. The ""gc"" module provides functions to perform a garbage
+collection, obtain debugging statistics, and tune the collector's
+parameters."
+Why doesn't CPython use a more traditional garbage collection scheme?,"For one thing, this is not a C standard feature and hence it's not
+portable. (Yes, we know about the Boehm GC library.  It has bits of
+assembler code for *most* common platforms, not for all of them, and
+although it is mostly transparent, it isn't completely transparent;
+patches are required to get Python to work with it.)
+"
+Why isn't all memory freed when CPython exits?,"Objects referenced from the global namespaces of Python modules are
+not always deallocated when Python exits.  This may happen if there
+are circular references.  There are also certain bits of memory that
+are allocated by the C library that are impossible to free (e.g. a
+tool like Purify will complain about these).  Python is, however,
+aggressive about cleaning up memory on exit and does try to destroy
+every single object.
+
+If you want to force Python to delete certain things on deallocation
+use the ""atexit"" module to run a function that will force those
+deletions."
+Why are there separate tuple and list data types?,"
+
+Lists are more like arrays in other languages.
+They tend to hold a varying number of objects all of which have the
+same type and which are operated on one-by-one.  For example,
+""os.listdir('.')"" returns a list of strings representing the files in
+the current directory.  Functions which operate on this output would
+generally not break if you added another file or two to the directory.
+
+Tuples are immutable, meaning that once a tuple has been created, you
+can't replace any of its elements with a new value.  Lists are
+mutable, meaning that you can always change a list's elements.  Only
+immutable elements can be used as dictionary keys, and hence only
+tuples and not lists can be used as keys."
+How are lists implemented in CPython?,"CPython's lists are really variable-length arrays, not Lisp-style
+linked lists. The implementation uses a contiguous array of references
+to other objects, and keeps a pointer to this array and the array's
+length in a list head structure.
+
+This makes indexing a list ""a[i]"" an operation whose cost is
+independent of the size of the list or the value of the index.
+
+When items are appended or inserted, the array of references is
+resized.  Some cleverness is applied to improve the performance of
+appending items repeatedly; when the array must be grown, some extra
+space is allocated so the next few times don't require an actual
+resize."
+How are dictionaries implemented in CPython?,"
+CPython's dictionaries are implemented as resizable hash tables.
+Compared to B-trees, this gives better performance for lookup (the
+most common operation by far) under most circumstances, and the
+implementation is simpler.
+
+Dictionaries work by computing a hash code for each key stored in the
+dictionary using the ""hash()"" built-in function.  "
+Why must dictionary keys be immutable?,"
+
+If you want a dictionary indexed with a list, simply convert the list
+to a tuple first; the function ""tuple(L)"" creates a tuple with the
+same entries as the list ""L"".  Tuples are immutable and can therefore
+be used as dictionary keys."
+Why doesn't list.sort() return the sorted list?,"In situations where performance matters, making a copy of the list
+just to sort it would be wasteful. Therefore, ""list.sort()"" sorts the
+list in place. In order to remind you of that fact, it does not return
+the sorted list.  This way, you won't be fooled into accidentally
+overwriting a list when you need a sorted copy but also need to keep
+the unsorted version around.
+"
+How do you specify and enforce an interface spec in Python?,"An interface specification for a module as provided by languages such
+as C++ and Java describes the prototypes for the methods and functions
+of the module.  Many feel that compile-time enforcement of interface
+specifications helps in the construction of large programs.
+
+"
+Why is there no goto?,"
+
+One can also use exceptions to provide a ""structured goto"" that works
+even across function calls.  Many feel that exceptions can
+conveniently emulate all reasonable uses of the ""go"" or ""goto""
+constructs of C, Fortran, and other languages. "
+Why can't raw strings or r-strings end with a backslash?,"
+
+Raw strings were designed to ease creating input for processors
+(chiefly regular expression engines) that want to do their own
+backslash escape processing. Such processors consider an unmatched
+trailing backslash to be an error anyway, so raw strings disallow
+that.  In return, they allow you to pass on the string quote character
+by escaping it with a backslash.  These rules work well when r-strings
+are used for their intended purpose.
+"
+"Why doesn't Python have a ""with"" statement for attribute assignments?","Python has a 'with' statement that wraps the execution of a block,
+calling code on the entrance and exit from the block.  
+In Python, such a construct would be ambiguous."
+Why are colons required for the if/while/def/class statements?,"The colon is required primarily to enhance readability (one of the
+results of the experimental ABC language). 
+
+Another minor reason is that the colon makes it easier for editors
+with syntax highlighting; they can look for colons to decide when
+indentation needs to be increased instead of having to do a more
+elaborate parsing of the program text."
+Why does Python allow commas at the end of lists and tuples?,"Python lets you add a trailing comma at the end of lists, tuples, and
+dictionaries:
+There are several reasons to allow this.
+
+When you have a literal value for a list, tuple, or dictionary spread
+across multiple lines, it's easier to add more elements because you
+don't have to remember to add a comma to the previous line.  The lines
+can also be reordered without creating a syntax error.
+
+Accidentally omitting the comma can lead to errors that are hard to
+diagnose. 
+
+Allowing the trailing comma may also make programmatic code generation
+easier."
+Can I create my own functions in C?,"Yes, you can create built-in modules containing functions, variables,
+exceptions and even new types in C.  This is explained in the document
+Extending and Embedding the Python Interpreter."
+Can I create my own functions in C++?,"Yes, using the C compatibility features found in C++.  Place ""extern
+""C"" { ... }"" around the Python include files and put ""extern ""C""""
+before each function that is going to be called by the Python
+interpreter.  Global or static C++ objects with constructors are
+probably not a good idea."
+How can I execute arbitrary Python statements from C?,"The highest-level function to do this is ""PyRun_SimpleString()"" which
+takes a single string argument to be executed in the context of the
+module ""__main__"" and returns ""0"" for success and ""-1"" when an
+exception occurred (including ""SyntaxError"").  If you want more
+control, use ""PyRun_String()""; see the source for
+""PyRun_SimpleString()"" in ""Python/pythonrun.c""."
+How can I evaluate an arbitrary Python expression from C?,"Call the function ""PyRun_String()"" from the previous question with the
+start symbol ""Py_eval_input""; it parses an expression, evaluates it
+and returns its value."
+How do I extract C values from a Python object?,"That depends on the object's type.  If it's a tuple, ""PyTuple_Size()""
+returns its length and ""PyTuple_GetItem()"" returns the item at a
+specified index.  Lists have similar functions, ""PyListSize()"" and
+""PyList_GetItem()"".
+
+For bytes, ""PyBytes_Size()"" returns its length and
+""PyBytes_AsStringAndSize()"" provides a pointer to its value and its
+length.  Note that Python bytes objects may contain null bytes so C's
+""strlen()"" should not be used."
+How do I use Py_BuildValue() to create a tuple of arbitrary length?,"You can't.  Use ""PyTuple_Pack()"" instead."
+How do I call an object's method from C?,"The ""PyObject_CallMethod()"" function can be used to call an arbitrary
+method of an object.  The parameters are the object, the name of the
+method to call, a format string like that used with ""Py_BuildValue()"",
+and the argument values"
+How do I catch the output from PyErr_Print() or anything that prints to stdout/stderr?,"In Python code, define an object that supports the ""write()"" method.
+Assign this object to ""sys.stdout"" and ""sys.stderr"".  Call
+print_error, or just allow the standard traceback mechanism to work.
+Then, the output will go wherever your ""write()"" method sends it.
+"
+How do I access a module written in Python from C?,"You can get a pointer to the module object using ImportModule keyword.
+
+If the module hasn't been imported yet (i.e. it is not yet present in
+""sys.modules""), this initializes the module; otherwise it simply
+returns the value of ""sys.modules[""<modulename>""]"".  Note that it
+doesn't enter the module into any namespace -- it only ensures it has
+been initialized and is stored in ""sys.modules"".
+"
+How do I interface to C++ objects from Python?,"Depending on your requirements, there are many approaches.  To do this
+manually, begin by reading the ""Extending and Embedding"" document.
+Realize that for the Python run-time system, there isn't a whole lot
+of difference between C and C++ -- so the strategy of building a new
+Python type around a C structure (pointer) type will also work for C++
+objects."
+I added a module using the Setup file and the make fails; why?,"Setup must end in a newline, if there is no newline there, the build
+process fails.  (Fixing this requires some ugly shell script hackery,
+and this bug is so minor that it doesn't seem worth the effort.)"
+How do I debug an extension?,"When using GDB with dynamically loaded extensions, you can't set a
+breakpoint in your extension until your extension is loaded.
+"
+"I want to compile a Python module on my Linux system, but some files are missing. Why?","Most packaged versions of Python don't include the
+""/usr/lib/python2.*x*/config/"" directory, which contains various files
+required for compiling Python extensions.
+
+For Red Hat, install the python-devel RPM to get the necessary files.
+
+For Debian, run ""apt-get install python-dev""."
+"How do I tell ""incomplete input"" from ""invalid input""?","Sometimes you want to emulate the Python interactive interpreter's
+behavior, where it gives you a continuation prompt when the input is
+incomplete (e.g. you typed the start of an ""if"" statement or you
+didn't close your parentheses or triple string quotes), but it gives
+you a syntax error message immediately when the input is invalid.
+
+In Python you can use the ""codeop"" module, which approximates the
+parser's behavior sufficiently.  IDLE uses this, for example.
+
+"
+How do I find undefined g++ symbols __builtin_new or __pure_virtual?,"To dynamically load g++ extension modules, you must recompile Python,
+relink it using g++ (change LINKCC in the Python Modules Makefile),
+and link your extension module using g++ (e.g., ""g++ -shared -o
+mymodule.so mymodule.o"")."
+Can I create an object class with some methods implemented in C and others in Python like through inheritance?,"Yes, you can inherit from built-in classes such as ""int"", ""list"",
+""dict"", etc.
+
+The Boost Python Library (BPL,
+http://www.boost.org/libs/python/doc/index.html) provides a way of
+doing this from C++ (i.e. you can inherit from an extension class
+written in C++ using the BPL)."
+How do I find a module or application to perform task X?,"Check the Library Reference to see if there's a relevant standard library module.For third-party packages, search the Python Package Index or try Google or another Web search engine.  "
+What are the different kinds of modules in python?,"There are (at least) three kinds of modules in Python:
+
+1. modules written in Python (.py);
+
+2. modules written in C and dynamically loaded (.dll, .pyd, .so, .sl,
+   etc);
+
+3. modules written in C and linked with the interpreter; to get a list
+   of these, type:
+"
+How do I make a Python script executable on Unix?,"You need to do two things: the script file's mode must be executable and the first line must begin with ""#!"" followed by the path of the Python interpreter.
+The first is done by executing ""chmod +x scriptfile"" or perhaps ""chmod
+755 scriptfile"".
+The second can be done in a number of ways.  The most straightforward
+way is to write
+  #!/usr/local/bin/python
+
+as the very first line of your file, using the pathname for where the
+Python interpreter is installed on your platform."
+Is there an equivalent to C's onexit() in Python?,"The ""atexit"" module provides a register function that is similar to
+C's ""onexit()""."
+Why don't my signal handlers work?,"The most common problem is that the signal handler is declared with
+the wrong argument list.  It is called as
+
+   handler(signum, frame)
+
+so it should be declared with two parameters:
+
+   def handler(signum, frame):
+       …"
+How do I create documentation from doc strings?,"The ""pydoc"" module can create HTML from the doc strings in your Python
+source code.  An alternative for creating API documentation purely
+from docstrings is epydoc.  Sphinx can also include docstring content."
+How do I get a single keypress at a time?,"For Unix variants there are several solutions.  It's straightforward
+to do this using curses, but curses is a fairly large module to learn."
+How do I program using threads?,"Be sure to use the ""threading"" module and not the ""_thread"" module. The ""threading"" module builds convenient abstractions on top of the low-level primitives provided by the ""_thread"" module."
+"
+None of my threads seem to run why?","
+As soon as the main thread exits, all threads are killed.  Your main thread is running too quickly, giving the threads no time to do any work.A simple fix is to add a sleep to the end of the program that's long enough for all the threads to finish."
+"
+How do I parcel out work among a bunch of worker threads?","The easiest way is to use the ""concurrent.futures"" module, especially the ""ThreadPoolExecutor"" class. Or, if you want fine control over the dispatching algorithm, you can write your own logic manually.  Use the ""queue"" module to create a
+queue containing a list of jobs.  The ""Queue"" class maintains a list of objects and has a "".put(obj)"" method that adds items to the queue and a "".get()"" method to return them.  The class will take care of the locking necessary to ensure that each job is handed out exactly once.
+"
+How do I generate random numbers in Python?,"The standard module ""random"" implements a random number generator.
+Usage is simple:
+   import random
+   random.random()
+
+This returns a random floating point number in the range [0, 1).
+
+"
+How do you implement persistent objects in Python?,"
+The ""pickle"" library module solves this in a very general way (though
+you still can't store things like open files, sockets or windows), and
+the ""shelve"" library module uses pickle and (g)dbm to create
+persistent mappings containing arbitrary Python objects."
+Are there any interfaces to database packages in Python?,"Yes.
+Interfaces to disk-based hashes such as ""DBM"" and ""GDBM"" are also
+included with standard Python.  There is also the ""sqlite3"" module,
+which provides a lightweight disk-based relational database.
+
+"
+How do I avoid blocking in the connect() method of a socket?,"The ""select"" module is commonly used to help with asynchronous I/O on
+sockets.
+"
+How do I delete a file?,"Use ""os.remove(filename)"" or ""os.unlink(filename)""."
+How do I copy a file?,"The ""shutil"" module contains a ""copyfile()"" function.  Note that on
+MacOS 9 it doesn't copy the resource fork and Finder info."
+How do I read or write binary data?,"To read or write complex binary data formats, it's best to use the
+""struct"" module.  It allows you to take a string containing binary
+data (usually numbers) and convert it to Python objects; and vice
+versa.
+
+"
+I can't seem to use os.read() on a pipe created with os.popen() why?,"""os.read()"" is a low-level function which takes a file descriptor, a
+small integer representing the opened file.  ""os.popen()"" creates a
+high-level file object, the same type returned by the built-in
+""open()"" function. Thus, to read *n* bytes from a pipe *p* created
+with ""os.popen()"", you need to use ""p.read(n)""."
+Why doesn't closing sys.stdout/stdin/stderr really close it?,"Stdin, stdout and stderr are treated specially by Python, because
+of the special status  given to them by C.  Running
+""sys.stdout.close()"" marks the Python-level file object as being
+closed, but does *not* close the associated C file descriptor.
+
+To close the underlying C file descriptor for one of these three, you
+should first be sure that's what you really want to do (e.g., you may
+confuse extension modules trying to do I/O).  If it is, use
+""os.close()"":"
+"
+How do I parcel out work among a bunch of worker threads?","
+The easiest way is to use the ""concurrent.futures"" module, especially
+the ""ThreadPoolExecutor"" class."
+What kinds of global value mutation are thread-safe?,"
+A *global interpreter lock* (GIL) is used internally to ensure that
+only one thread runs in the Python VM at a time.  In general, Python
+offers to switch among threads only between bytecode instructions.
+
+"
+What is Global Interpreter Lock?,"The *global interpreter lock* (GIL) is often seen as a hindrance to
+Python's deployment on high-end multiprocessor server machines,
+because a multi-threaded Python program effectively only uses one CPU,
+due to the insistence that (almost) all Python code can only run while
+the GIL is held."
+How do I test a Python program or component?,"Python comes with two testing frameworks.  The ""doctest"" module finds
+examples in the docstrings for a module and runs them, comparing the
+output with the expected output given in the docstring.The ""unittest"" module is a fancier testing framework modelled on Java
+and Smalltalk testing frameworks."
+How do I make Python scripts executable?,"On Windows, the standard Python installer already associates the .py
+extension with a file type (Python.File) and gives that file type an
+open command that runs the interpreter (""D:\Program
+Files\Python\python.exe ""%1"" %*"").  This is enough to make scripts
+executable from the command prompt as 'foo.py'.  If you'd rather be
+able to execute the script by simple typing 'foo' with no extension
+you need to add .py to the PATHEXT environment variable.
+"
+Why does Python sometimes take so long to start?,"The problem may be caused by a misconfiguration of virus checking
+software on the problem machine.  Some virus scanners have been known
+to introduce startup overhead of two orders of magnitude when the
+scanner is configured to monitor all reads from the filesystem.  Try
+checking the configuration of virus scanning software on your systems
+to ensure that they are indeed configured identically. McAfee, when
+configured to scan all file system read activity, is a particular
+offender."
+"
+How do I make an executable from a Python script?","See cx_Freeze for a distutils extension that allows you to create
+console and GUI executables from Python code. py2exe, the most popular
+extension for building Python 2.x-based executables, does not yet
+support Python 3 but a version that does is in development."
+"
+Is a ""*.pyd"" file the same as a DLL?","Yes, .pyd files are dll's, but there are a few differences.  If you
+have a DLL named ""foo.pyd"", then it must have a function
+""PyInit_foo()"".  You can then write Python ""import foo"", and Python
+will search for foo.pyd (as well as foo.py, foo.pyc) and if it finds
+it, will attempt to call ""PyInit_foo()"" to initialize it.  You do not
+link your .exe with foo.lib, as that would cause Windows to require
+the DLL to be present."
+How can I embed Python into a Windows application?,"Embedding the Python interpreter in a Windows app can be summarized as
+follows:
+
+1. Do _not_ build Python into your .exe file directly.  On Windows,
+   Python must be a DLL to handle importing modules that are
+   themselves DLL's.  (This is the first key undocumented fact.)
+   Instead, link to ""python*NN*.dll""; it is typically installed in
+   ""C:\Windows\System"".  *NN* is the Python version, a number such as
+   ""33"" for Python 3.3.                                                                                                                                                                                                                    2. If you use SWIG, it is easy to create a Python ""extension module""
+   that will make the app's data and methods available to Python.
+   SWIG will handle just about all the grungy details for you.  The
+   result is C code that you link *into* your .exe file (!)  You do
+   _not_ have to create a DLL file, and this also simplifies linking."
+How do I keep editors from inserting tabs into my Python source?,"Under any editor, mixing tabs and spaces is a bad idea.  MSVC is no
+different in this respect, and is easily configured to use spaces:
+Take Tools ? Options ? Tabs, and for file type ""Default"" set ""Tab
+size"" and ""Indent size"" to 4, and select the ""Insert spaces"" radio
+button.
+
+Python raises ""IndentationError"" or ""TabError"" if mixed tabs and
+spaces are causing problems in leading whitespace. You may also run
+the ""tabnanny"" module to check a directory tree in batch mode.
+"
+How do I check for a keypress without blocking?,"
+Use the ""msvcrt"" module.  This is a standard Windows-specific
+extension module. It defines a function ""kbhit()"" which checks whether
+a keyboard hit is present, and ""getch()"" which gets one character
+without echoing it."
+"
+How do I run a Python program under Windows?","You can download and install python from python.org[1] . Choose the executable installer as that will set up the environment to run Python for you. The python version you choose is important as version 3.x.x is significantly different than version 2.7.x. Some existing python apps out there will not run with version 3.x.x.
+
+After installing python, you can run any source file from the command line: python scriptname.py 
+Other extensions that the python interpreter also recognizes are .pyc (containing compiled bytecode), .pyo (optimized bytecode), .pyd (Windows DLL for python),…
+
+The python .pyw is for python scripts with GUI interface. These files must be run with the pythonw command (which is also included with the Windows version of python.)"
+Are there tools to help find bugs or perform static analysis?,"Yes.
+
+Pylint and Pyflakes do basic checking that will help you catch bugs
+sooner.
+
+Static type checkers such as Mypy, Pyre, and Pytype can check type
+hints in Python source code."
+Are there coding standards or a style guide for Python programs?,"Yes.  The coding style required for standard library modules is
+documented as **PEP 8**."
+What platform-independent GUI toolkits exist for Python?,"Depending on what platform(s) you are aiming at, there are several.
+Some of them haven't been ported to Python 3 yet.  At least Tkinter
+and Qt are known to be Python 3-compatible.
+
+
+Tkinter
+-------
+wxWidgets
+---------
+Qt
+--
+Gtk+
+----
+Kivy
+----
+FLTK
+----
+OpenGL
+------"
+What platform-specific GUI toolkits exist for Python?,"By installing the PyObjc Objective-C bridge, Python programs can use
+Mac OS X's Cocoa libraries.
+
+Pythonwin by Mark Hammond includes an interface to the Microsoft
+Foundation Classes and a Python programming environment that's written
+mostly in Python using the MFC classes."
+How do I freeze Tkinter applications?,"Freeze is a tool to create stand-alone applications.  When freezing
+Tkinter applications, the applications will not be truly stand-alone,
+as the application will still need the Tcl and Tk libraries.
+
+One solution is to ship the application with the Tcl and Tk libraries,
+and point to them at run-time using the ""TCL_LIBRARY"" and ""TK_LIBRARY""
+environment variables.
+
+To get truly stand-alone applications, the Tcl scripts that form the
+library have to be integrated into the application as well. One tool
+supporting that is SAM (stand-alone modules), which is part of the Tix
+distribution ."
+Can I have Tk events handled while waiting for IO?,"On platforms other than Windows, yes, and you don't even need threads!
+But you'll have to restructure your I/O code a bit.  Tk has the
+equivalent of Xt's ""XtAddInput()"" call, which allows you to register a
+callback function which will be called from the Tk mainloop when I/O
+is possible on a file descriptor.  "
+I can't get key bindings to work in Tkinter: why?,"An often-heard complaint is that event handlers bound to events with
+the ""bind()"" method don't get handled even when the appropriate key is
+pressed.
+
+The most common cause is that the widget to which the binding applies
+doesn't have ""keyboard focus"".  Check out the Tk documentation for the
+focus command. Usually a widget is given the keyboard focus by
+clicking in it (but not for labels; see the takefocus option).
+"
+Why is Python installed on my machine?,"
+If you find Python installed on your system but don't remember
+installing it, there are several possible ways it could have gotten
+there.
+
+* Perhaps another user on the computer wanted to learn programming and
+  installed it; you'll have to figure out who's been using the machine
+  and might have installed it.
+
+* A third-party application installed on the machine might have been
+  written in Python and included a Python installation.  There are
+  many such applications, from GUI programs to network servers and
+  administrative scripts.
+
+* Some Windows machines also have Python installed.  At this writing
+  we're aware of computers from Hewlett-Packard and Compaq that
+  include Python.  Apparently some of HP/Compaq's administrative tools
+  are written in Python.
+
+* Many Unix-compatible operating systems, such as Mac OS X and some
+  Linux distributions, have Python installed by default; it's included
+  in the base installation."
+Can I delete Python?,"That depends on where Python came from.
+
+If someone installed it deliberately, you can remove it without
+hurting anything.  On Windows, use the Add/Remove Programs icon in the
+Control Panel.
+
+If Python was installed by a third-party application, you can also
+remove it, but that application will no longer work.  You should use
+that application's uninstaller rather than removing Python directly.
+
+If Python came with your operating system, removing it is not
+recommended.  If you remove it, whatever tools were written in Python
+will no longer run, and some of them might be important to you.
+Reinstalling the whole system would then be required to fix things
+again.
+"
+"Is there a source code level debugger with breakpoints, single-stepping, etc.?","Yes.
+
+Several debuggers for Python are described below, and the built-in
+function ""breakpoint()"" allows you to drop into any of them.
+
+The pdb module is a simple but adequate console-mode debugger for
+Python. It is part of the standard Python library. You can also write your own debugger
+by using the code for pdb as an example.
+
+
+PythonWin is a Python IDE that includes a GUI debugger based on pdb.
+The Pythonwin debugger colors breakpoints and has quite a few cool
+features such as debugging non-Pythonwin programs.  Pythonwin is
+available as part of the Python for Windows Extensions project and as
+a part of the ActivePython distribution (see
+https://www.activestate.com/activepython)."
+Are there tools to help find bugs or perform static analysis?,"Yes.
+
+Pylint and Pyflakes do basic checking that will help you catch bugs
+sooner.
+
+Static type checkers such as Mypy, Pyre, and Pytype can check type
+hints in Python source code."
+How can I create a stand-alone binary from a Python script?,"
+You don't need the ability to compile Python to C code if all you want
+is a stand-alone program that users can download and run without
+having to install the Python distribution first.  There are a number
+of tools that determine the set of modules required by a program and
+bind these modules together with a Python binary to produce a single
+executable.
+
+One is to use the freeze tool, which is included in the Python source
+tree as ""Tools/freeze"". It converts Python byte code to C arrays; a C
+compiler you can embed all your modules into a new program, which is
+then linked with the standard Python modules."
+Why am I getting an UnboundLocalError when the variable has a value?,"UnboundLocalError: local variable 'x' referenced before assignment
+
+This is because when you make an assignment to a variable in a scope,
+that variable becomes local to that scope and shadows any similarly
+named variable in the outer scope.  Since the last statement in foo
+assigns a new value to ""x"", the compiler recognizes it as a local
+variable.  Consequently when the earlier ""print(x)"" attempts to print
+the uninitialized local variable and an error results.
+"
+What are the rules for local and global variables in Python?,"
+In Python, variables that are only referenced inside a function are
+implicitly global.  If a variable is assigned a value anywhere within
+the function's body, it's assumed to be a local unless explicitly
+declared as global.
+
+Though a bit surprising at first, a moment's consideration explains
+this.  On one hand, requiring ""global"" for assigned variables provides
+a bar against unintended side-effects.  On the other hand, if ""global""
+was required for all global references, you'd be using ""global"" all
+the time.  You'd have to declare as global every reference to a built-
+in function or to a component of an imported module.  This clutter
+would defeat the usefulness of the ""global"" declaration for
+identifying side-effects."
+Why do lambdas defined in a loop with different values all return the same result?,"
+This happens because ""x"" is not local to the lambdas, but is defined
+in the outer scope, and it is accessed when the lambda is called ---
+not when it is defined.  "
+How do I share global variables across modules?,"The canonical way to share information across modules within a single
+program is to create a special module (often called config or cfg).
+Just import the config module in all modules of your application; the
+module then becomes available as a global name.  Because there is only
+one instance of each module, any changes made to the module object get
+reflected everywhere.  
+
+"
+"What are the ""best practices"" for using import in a module?","
+In general, don't use ""from modulename import *"".  Doing so clutters
+the importer's namespace, and makes it much harder for linters to
+detect undefined names.
+
+Import modules at the top of a file.  Doing so makes it clear what
+other modules your code requires and avoids questions of whether the
+module name is in scope. Using one import per line makes it easy to
+add and delete module imports, but using multiple imports per line
+uses less screen space.
+
+It's good practice if you import modules in the following order:
+
+1. standard library modules -- e.g. ""sys"", ""os"", ""getopt"", ""re""
+
+2. third-party library modules (anything installed in Python's site-
+   packages directory) -- e.g. mx.DateTime, ZODB, PIL.Image, etc.
+
+3. locally-developed modules"
+Why are default values shared between objects?,"It is often expected that a function call creates new objects for
+default values. This is not what happens. Default values are created
+exactly once, when the function is defined.  If that object is
+changed, like the dictionary in this example, subsequent calls to the
+function will refer to this changed object.
+
+By definition, immutable objects such as numbers, strings, tuples, and
+""None"", are safe from change. Changes to mutable objects such as
+dictionaries, lists, and class instances can lead to confusion.
+
+Because of this feature, it is good programming practice to not use
+mutable objects as default values.  Instead, use ""None"" as the default
+value and inside the function, check if the parameter is ""None"" and
+create a new list/dictionary/whatever if it is. "
+What is the difference between arguments and parameters?,"*Parameters* are defined by the names that appear in a function
+definition, whereas *arguments* are the values actually passed to a
+function when calling it.  Parameters define what types of arguments a
+function can accept.  "
+How do I write a function with output parameters like in call by reference?,"Remember that arguments are passed by assignment in Python.  Since
+assignment just creates references to objects, there's no alias
+between an argument name in the caller and callee, and so no call-by-
+reference per se.  You can achieve the desired effect in a number of
+ways.
+
+1. By returning a tuple of the results:
+
+2. By using global variables.  This isn't thread-safe, and is not
+   recommended.
+
+3. By passing a mutable (changeable in-place) object:
+
+
+4. By passing in a dictionary that gets mutated:
+
+5. Or bundle up values in a class instance:
+
+Your best choice is to return a tuple containing the multiple results.
+"
+How can I find the methods or attributes of an object?,"For an instance x of a user-defined class, ""dir(x)"" returns an
+alphabetized list of the names containing the instance attributes and
+methods and attributes defined by its class.
+"
+How can my code discover the name of an object?,"Generally speaking, it can't, because objects don't really have names.
+Essentially, assignment always binds a name to a value; the same is
+true of ""def"" and ""class"" statements, but in that case the value is a
+callable."
+What's up with the comma operator's precedence?,"
+Comma is not an operator in Python."
+Is it possible to write obfuscated one-liners in Python?,"
+Yes.  Usually this is done by nesting ""lambda"" within ""lambda"".  See
+the following three examples, due to Ulf Bartelt:"
+What does the slash in the parameter list of a function mean?,"A slash in the argument list of a function denotes that the parameters
+prior to it are positional-only.  Positional-only parameters are the
+ones without an externally-usable name.  Upon calling a function that
+accepts positional-only parameters, arguments are mapped to parameters
+based solely on their position."
+How do I specify hexadecimal and octal integers?,"Hexadecimal is just as easy.  Simply precede the hexadecimal number
+with a zero, and then a lower or uppercase ""x"".  Hexadecimal digits
+can be specified in lower or uppercase. 
+"
+How do I convert a string to a number?,"For integers, use the built-in ""int()"" type constructor"
+How do I convert a number to a string?,"To convert use the built-in
+type constructor ""str()"".  If you want a hexadecimal or octal
+representation, use the built-in functions ""hex()"" or ""oct()"".  For
+fancy formatting, see the Formatted string literals and Format String
+Syntax sections, "
+How do I modify a string in place?,"You can't, because strings are immutable.  In most situations, you
+should simply construct a new string from the various parts you want
+to assemble it from.  However, if you need an object with the ability
+to modify in-place unicode data, try using an ""io.StringIO"" object or
+the ""array"" module:"
+How do I use strings to call functions/methods?,"
+* The best is to use a dictionary that maps strings to functions.  The
+  primary advantage of this technique is that the strings do not need
+  to match the names of the functions.  
+* Use the built-in function ""getattr()"":
+
+    
+* Use ""locals()"" to resolve the function name:
+
+  "
+Is there an equivalent to Perl's chomp() for removing trailing newlines from strings?,"You can use ""S.rstrip(""\r\n"")"" to remove all occurrences of any line
+terminator from the end of the string ""S"" without removing other
+trailing whitespace"
+Is there a scanf() or sscanf() equivalent?,"Not as such.
+
+For simple input parsing, the easiest approach is usually to split the
+line into whitespace-delimited words
+"
+What is the most efficient way to concatenate many strings together?,"
+""str"" and ""bytes"" objects are immutable, therefore concatenating many
+strings together is inefficient as each concatenation creates a new
+object.  In the general case, the total runtime cost is quadratic in
+the total string length.
+"
+My program is too slow. How do I speed it up?,"
+That's a tough one, in general.  First, here are a list of things to
+remember before diving further:
+
+* Performance characteristics vary across Python implementations.
+  This FAQ focuses on *CPython*.
+
+* Behaviour can vary across operating systems, especially when talking
+  about I/O or multi-threading.
+
+* You should always find the hot spots in your program *before*
+  attempting to optimize any code (see the ""profile"" module).
+
+* Writing benchmark scripts will allow you to iterate quickly when
+  searching for improvements (see the ""timeit"" module).
+
+* It is highly recommended to have good code coverage (through unit
+  testing or any other technique) before potentially introducing
+  regressions hidden in sophisticated optimizations."
+How do I convert between tuples and lists?,"The type constructor ""tuple(seq)"" converts any sequence (actually, any
+iterable) into a tuple with the same items in the same order.
+
+"
+What's a negative index?,"Python sequences are indexed with positive numbers and negative
+numbers.  For positive numbers 0 is the first index 1 is the second
+index and so forth.  For negative indices -1 is the last index and -2
+is the penultimate (next to last) index and so forth
+"
+How do I iterate over a sequence in reverse order?,"Use the ""reversed()"" built-in function:
+
+ 
+"
+How do you remove multiple items from a list,"
+
+Using List comprehension"
+How do you make an array in Python?,"
+Lists are equivalent to C or Pascal arrays in their time complexity;
+the primary difference is that a Python list can contain objects of
+many different types.
+
+The ""array"" module also provides methods for creating arrays of fixed
+types with compact representations, but they are slower to index than
+lists.  Also note that the Numeric extensions and others define array-
+like structures with various characteristics as well."
+How do I create a multidimensional list?,"The suggested approach is to create a list of the desired length first
+and then fill in each element with a newly created list Or you can use an extension that provides a matrix datatype; NumPy is
+the best known."
+What is a class?,"A class is the particular object type created by executing a class
+statement. Class objects are used as templates to create instance
+objects, which embody both the data (attributes) and code (methods)
+specific to a datatype.
+"
+What is a method?,"A method is a function on some object ""x"" that you normally call as
+""x.name(arguments...)"".  Methods are defined as functions inside the
+class definition"
+What is self?,"Self is merely a conventional name for the first argument of a method.
+"
+What is delegation?,"Delegation is an object oriented technique (also called a design
+pattern). Let's say you have an object ""x"" and want to change the
+behaviour of just one of its methods.  You can create a new class that
+provides a new implementation of the method you're interested in
+changing and delegates all other methods to the corresponding method
+of ""x"".
+"
+How do I call a method defined in a base class from a derived class that overrides it?,"Use the built-in ""super()"" function"
+How can I organize my code to make it easier to change the base class?,"You could assign the base class to an alias and derive from the alias.
+Then all you have to change is the value assigned to the alias.
+"
+How do I create static class data and static class methods?,"Both static data and static methods (in the sense of C++ or Java) are
+supported in Python.For static data, simply define a class attribute.  To assign a new
+value to the attribute, you have to explicitly use the class name in
+the assignment."
+How can I overload constructors (or methods) in Python?,"
+In Python you have to write a single constructor that catches all
+cases using default arguments. "
+"
+How do I get a list of all instances of a given class?","Python does not keep track of all instances of a class (or of a built-
+in type). You can program the class's constructor to keep track of all
+instances by keeping a list of weak references to each instance.
+"
+"Why does the result of ""id()"" appear to be not unique?","The ""id()"" builtin returns an integer that is guaranteed to be unique
+during the lifetime of the object.  Since in CPython, this is the
+object's memory address, it happens frequently that after an object is
+deleted from memory, the next freshly created object is allocated at
+the same position in memory.  "
+When can I rely on identity tests with the *is* operator?,"The most important property of an identity test is that an object is
+always identical to itself, ""a is a"" always returns ""True"".  Identity
+tests are usually faster than equality tests.  And unlike equality
+tests, identity tests are guaranteed to return a boolean ""True"" or
+""False"".
+"
+How do I create a .pyc file?,"When a module is imported for the first time a "".pyc"" file
+containing the compiled code should be created in a ""__pycache__""
+subdirectory of the directory containing the "".py"" file.  The "".pyc""
+file will have a filename that starts with the same name as the "".py""
+file, and ends with "".pyc"", with a middle component that depends on
+the particular ""python"" binary that created it. "
+How do I find the current module name?,"
+A module can find out its own module name by looking at the predefined
+global variable ""__name__"".  If this has the value ""'__main__'"", the
+program is running as a script.  Many modules that are usually used by
+importing them also provide a command-line interface or a self-test,
+and only execute this code after checking ""__name__""
+"
+What is the difference between list and tuples in Python?,LIST-Lists are mutable i.e they can be edited.TUPLES-Tuples are immutable (tuples are lists which can’t be edited).
+What are the key features of Python?,"Python is an interpreted language. That means that, unlike languages like C and its variants, Python does not need to be compiled before it is run. Other interpreted languages include PHP and Ruby.
+Python is dynamically typed, this means that you don’t need to state the types of variables when you declare them or anything like that. You can do things like x=111 and then x=""I'm a string"" without error
+Python is well suited to object orientated programming in that it allows the definition of classes along with composition and inheritance. Python does not have access specifiers (like C++’s public, private).
+In Python, functions are first-class objects. This means that they can be assigned to variables, returned from other functions and passed into functions. Classes are also first class objects
+Writing Python code is quick but running it is often slower than compiled languages. Fortunately?Python allows the inclusion of C-based extensions so bottlenecks can be optimized away and often are. The numpy package is a good example of this, it’s really quite quick because a lot of the number-crunching it does isn’t actually done by Python
+Python finds use in many spheres – web applications, automation, scientific modeling, big data applications and many more. It’s also often used as “glue” code to get other languages and components to play nice."
+What type of language is python? Programming or scripting?,"Python is capable of scripting, but in general sense, it is considered as a general-purpose programming language. To know more about Scripting, you can refer to the Python Scripting Tutorial."
+Python an interpreted language. Explain.,"An interpreted language is any programming language which is not in machine-level code before runtime. Therefore, Python is an interpreted language."
+What is pep 8?,PEP stands for Python Enhancement Proposal. It is a set of rules that specify how to format Python code for maximum readability.
+How is memory managed in Python?,"Memory is managed in Python in the following ways:
+
+Memory management in python is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have access to this private heap. The python interpreter takes care of this instead.
+The allocation of heap space for Python objects is done by Python’s memory manager. The core API gives access to some tools for the programmer to code.
+Python also has an inbuilt garbage collector, which recycles all the unused memory and so that it can be made available to the heap space."
+What is namespace in Python?,A namespace is a naming system used to make sure that names are unique to avoid naming conflicts.
+What is PYTHONPATH?,"It is an environment variable which is used when a module is imported. Whenever a module is imported, PYTHONPATH is also looked up to check for the presence of the imported modules in various directories. The interpreter uses it to determine which module to load."
+ What are python modules? Name some commonly used built-in modules in Python?,"Python modules are files containing Python code. This code can either be functions classes or variables. A Python module is a .py file containing executable code.
+
+Some of the commonly used built-in modules are:
+
+os
+sys
+math
+random
+data time
+JSON"
+What are local variables and global variables in Python?,"Global Variables:
+
+Variables declared outside a function or in global space are called global variables. These variables can be accessed by any function in the program.
+
+Local Variables:
+
+Any variable declared inside a function is known as a local variable. This variable is present in the local space and not in the global space."
+Is python case sensitive?,Yes. Python is a case sensitive language.
+What is type conversion in Python?,"Type conversion refers to the conversion of one data type iinto another.
+
+int() – converts any data type into integer type
+
+float() – converts any data type into float type
+
+ord() – converts characters into integer
+
+hex() – converts integers to hexadecimal
+
+oct() – converts integer to octal
+
+tuple() – This function is used to convert to a tuple.
+
+set() – This function returns the type after converting to set.
+
+list() – This function is used to convert any data type to a list type.
+
+dict() – This function is used to convert a tuple of order (key,value) into a dictionary.
+
+str() – Used to convert integer into a string.
+
+complex(real,imag) – This functionconverts real numbers to complex(real,imag) number."
+How to install Python on Windows and set path variable?," To install Python on Windows, follow the below steps:
+
+Install python from this link: https://www.python.org/downloads/
+After this, install it on your PC. Look for the location where PYTHON has been installed on your PC using the following command on your command prompt: cmd python. 
+Then go to advanced system settings and add a new variable and name it as PYTHON_NAME and paste the copied path.
+Look for the path variable, select its value and select ‘edit’.
+Add a semicolon towards the end of the value if it’s not present and then type %PYTHON_HOME% "
+Is indentation required in python?,"Indentation is necessary for Python. It specifies a block of code. All code within loops, classes, functions, etc is specified within an indented block. It is usually done using four space characters. If your code is not indented necessarily, it will not execute accurately and will throw errors as well."
+ What is the difference between Python Arrays and lists?,"Arrays and lists, in Python, have the same way of storing data. But, arrays can hold only a single data type elements whereas lists can hold any data type elements."
+What are functions in Python?,"A function is a block of code which is executed only when it is called. To define a Python function, the def keyword is used."
+What is __init__?,__init__ is a method or constructor in Python. This method is automatically called to allocate memory when a new object/ instance of a class is created. All classes have the __init__ method.
+What is a lambda function?,"An anonymous function is known as a lambda function. This function can have any number of parameters but, can have just one statement."
+What is self in Python?,"elf is an instance or an object of a class. In Python, this is explicitly included as the first parameter. However, this is not the case in Java where it’s optional.  It helps to differentiate between the methods and attributes of a class with local variables.
+
+The self variable in the init method refers to the newly created object while in other methods, it refers to the object whose method was called."
+"How does break, continue and pass work?","Break-Allows loop termination when some condition is met and the control is transferred to the next statement.Continue-Allows skipping some part of a loop when some specific condition is met and the control is transferred to the beginning of the loop
+Pass -Used when you need some block of code syntactically, but you want to skip its execution. This is basically a null operation. Nothing happens when this is executed."
+What are python iterators?,Iterators are objects which can be traversed though or iterated upon.
+How can you generate random numbers in Python?,"The statement random.random() method return the floating point number that is in the range of [0, 1). The function generates random float numbers. The methods that are used with the random class are the bound methods of the hidden instances. The instances of the Random can be done to show the multi-threading programs that creates a different instance of individual threads. The other random generators that are used in this are:
+
+randrange(a, b): it chooses an integer and define the range in-between [a, b). It returns the elements by selecting it randomly from the range that is specified. It doesn’t build a range object.
+uniform(a, b): it chooses a floating point number that is defined in the range of [a,b).Iyt returns the floating point number
+normalvariate(mean, sdev): it is used for the normal distribution where the mu is a mean and the sdev is a sigma that is used for standard deviation.
+The Random class that is used and instantiated creates independent multiple random number generators."
+What is the difference between range & xrange?,"For the most part, xrange and range are the exact same in terms of functionality. They both provide a way to generate a list of integers for you to use, however you please. The only difference is that range returns a Python list object and x range returns an xrange object.
+
+This means that xrange doesn’t actually generate a static list at run-time like range does. It creates the values as you need them with a special technique called yielding. This technique is used with a type of object known as generators. That means that if you have a really gigantic range you’d like to generate a list for, say one billion, xrange is the function to use.
+
+This is especially true if you have a really memory sensitive system such as a cell phone that you are working with, as range will use as much memory as it can to create your array of integers, which can result in a Memory Error and crash your program. It’s a memory hungry beast."
+How do you write comments in python?,"Comments in Python start with a # character. However, alternatively at times, commenting is done using docstrings(strings enclosed within triple quotes)."
+What is pickling and unpickling?,"Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling."
+What are the generators in python?,Functions that return an iterable set of items are called generators.
+How will you capitalize the first letter of string?,"In Python, the capitalize() method capitalizes the first letter of a string. If the string already consists of a capital letter at the beginning, then, it returns the original string."
+How to comment multiple lines in python?,Multi-line comments appear in more than one line. All the lines to be commented are to be prefixed by a #. You can also a very good shortcut method to comment multiple lines. All you need to do is hold the ctrl key and left click in every place wherever you want to include a # character and type a # just once. This will comment all the lines where you introduced your cursor.
+What are docstrings in Python?,"Docstrings are not actually comments, but, they are documentation strings. These docstrings are within triple quotes. They are not assigned to any variable and therefore, at times, serve the purpose of comments as well."
+How will you convert a string to all lowercase?,"To convert a string to lowercase, lower() function can be used.
+
+Example:
+
+1
+2
+stg='ABCD'
+print(stg.lower())"
+How can you randomize the items of a list in place in Python?,"Consider the example shown below:
+
+1
+2
+3
+4
+from random import shuffle
+x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
+shuffle(x)
+print(x)"
+What does [::-1} do?,"::-1] is used to reverse the order of an array or a sequence.
+For example:
+1
+2
+3
+import array as arr
+My_Array=arr.array('i',[1,2,3,4,5])
+My_Array[::-1]"
+What is the usage of help() and dir() function in Python?,"Help() function: The help() function is used to display the documentation string and also facilitates you to see the help related to modules, keywords, attributes, etc.Dir() function: The dir() function is used to display the defined symbols."
+What is a dictionary in Python?,The built-in datatypes in Python is called dictionary. It defines one-to-one relationship between keys and values.Dictionaries contain pair of keys and their corresponding values. Dictionaries are indexed by keys.
+How can the ternary operators be used in python?,The Ternary operator is the operator that is used to show the conditional statements. This consists of the true or false values with a statement that has to be evaluated for it.
+"What does this mean: *args, **kwargs? And why would we use it?"," We use *args when we aren’t sure how many arguments are going to be passed to a function, or if we want to pass a stored list or tuple of arguments to a function. **kwargs is used when we don’t know how many keyword arguments will be passed to a function, or it can be used to pass the values of a dictionary as keyword arguments."
+What does len() do?,"It is used to determine the length of a string, a list, an array, etc. Eg : stg='ABCD'  len(stg)"
+"Explain split(), sub(), subn() methods of “re” module in Python.",split() – uses a regex pattern to “split” a given string into a list. sub() – finds all substrings where the regex pattern matches and then replace them with a different string subn() – it is similar to sub() and also returns the new string along with the no. of replacements.
+What are negative indexes and why are they used?,The negative index is used to remove any new-line spaces from the string and allow the string to except the last character that is given as S[:-1].
+What are Python packages?,Python packages are namespaces containing multiple modules.
+How can files be deleted in Python?,"To delete a file in Python, you need to import the OS Module. After that, you need to use the os.remove() function."
+What are the built-in types of python?,"Built-in types in Python are as follows –Integers,Floating-point,Complex numbers,Strings,Boolean,Built-in functions"
+What advantages do NumPy arrays offer over (nested) Python lists?,"NumPy array is faster and You get a lot built in with NumPy, FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms, etc. "
+How to add values to a python array?,"Elements can be added to an array using the append(), extend() and the insert (i,x) functions."
+How to remove values to a python array?,Array elements can be removed using pop() or remove() method. The difference between these two functions is that the former returns the deleted value whereas the latter does not.
+Does Python have OOps concepts?,"Python is an object-oriented programming language. This means that any program can be solved in python by creating an object model. However, Python can be treated as procedural as well as structural language."
+What is the difference between deep and shallow copy?,Shallow copy is used when a new instance type gets created and it keeps the values that are copied in the new instance.Deep copy is used to store the values that are already copied. Deep copy doesn’t copy the reference pointers to the objects.
+What are Python libraries? Name a few of them.,"Python libraries are a collection of Python packages. Some of the majorly used python libraries are – Numpy, Pandas, Matplotlib, Scikit-learn and many more."
+What is split used for?,The split() method is used to separate a given string in Python.
+How to import modules in python?,Modules can be imported using the import keyword.
+Explain Inheritance in Python with an example.,"Inheritance allows One class to gain all the members(say attributes and methods) of another class. Inheritance provides code reusability, makes it easier to create and maintain an application."
+How are classes created in Python? ,Class in Python is created using the class keyword.
+What is monkey patching in Python?,"In Python, the term monkey patch only refers to dynamic modifications of a class or module at run-time."
+Does python support multiple inheritance?,"Multiple inheritance means that a class can be derived from more than one parent classes. Python does support multiple inheritance, unlike Java."
+What is Polymorphism in Python?,"Polymorphism means the ability to take multiple forms. So, for instance, if the parent class has a method named ABC then the child class also can have a method with the same name ABC having its own parameters and variables. Python allows polymorphism."
+Define encapsulation in Python?,Encapsulation means binding the code and the data together. A Python class in an example of encapsulation.
+How do you do data abstraction in Python?,Data Abstraction is providing only the required details and hiding the implementation from the world. It can be achieved in Python by using interfaces and abstract classes.
+Does python make use of access specifiers?,"Python does not deprive access to an instance variable or function. Python lays down the concept of prefixing the name of the variable, function or method with a single or double underscore to imitate the behavior of protected and private access specifiers."
+How to create an empty class in Python? ,"An empty class is a class that does not have any code defined within its block. It can be created using the pass keyword. However, you can create objects of this class outside the class itself. IN PYTHON THE PASS command does nothing when its executed. it’s a null statement. "
+What does an object() do?,"It returns a featureless object that is a base for all classes. Also, it does not take any parameters."
+Write a one-liner that will count the number of capital letters in a file. Your code should work even if the file is too big to fit in memory.,"with open(SOME_LARGE_FILE) as fh:
+count = 0
+text = fh.read()
+for character in text:
+    if character.isupper():
+count += 1"
+Write a sorting algorithm for a numerical dataset in Python.,"list = [""1"", ""4"", ""0"", ""6"", ""9""]
+list = [int(i) for i in list]
+list.sort()
+print (list)"
+How To Save An Image Locally Using Python Whose URL Address I Already Know?,"import urllib.request
+urllib.request.urlretrieve(""URL"", ""local-filename.jpg"")"
+How to get indices of N maximum values in a NumPy array?,"import numpy as np
+arr = np.array([1, 3, 2, 4, 5])
+print(arr.argsort()[-3:][::-1])"
+How do you calculate percentiles with Python/ NumPy?,"import numpy as np
+a = np.array([1,2,3,4,5])
+p = np.percentile(a, 50) #Returns 50th percentile, e.g. median
+print(p)"
+ Explain what Flask is and its benefits?,"Flask is a web microframework for Python based on “Werkzeug, Jinja2 and good intentions” BSD license. Werkzeug and Jinja2 are two of its dependencies. This means it will have little to no dependencies on external libraries.  It makes the framework light while there is a little dependency to update and fewer security bugs.
+
+A session basically allows you to remember information from one request to another. In a flask, a session uses a signed cookie so the user can look at the session contents and modify. The user can modify the session if only it has the secret key Flask.secret_key."
+ Is Django better than Flask?," Django and Flask map the URL’s or addresses typed in the web browsers to functions in Python. 
+
+Flask is much simpler compared to Django but, Flask does not do a lot for you meaning you will need to specify the details, whereas Django does a lot for you wherein you would not need to do much work. Django consists of prewritten code, which the user will need to analyze whereas Flask gives the users to create their own code, therefore, making it simpler to understand the code. Technically both are equally good and both contain their own pros and cons."
+" Mention the differences between Django, Pyramid and Flask.","Flask is a “microframework” primarily build for a small application with simpler requirements. In flask, you have to use external libraries. Flask is ready to use.
+Pyramid is built for larger applications. It provides flexibility and lets the developer use the right tools for their project. The developer can choose the database, URL structure, templating style and more. Pyramid is heavy configurable.
+Django can also be used for larger applications just like Pyramid. It includes an ORM."
+Discuss Django architecture.,"The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user."
+Explain how you can set up the Database in Django.,"You can use the command edit mysite/setting.py, it is a normal python module with module level representing Django settings.
+
+Django uses SQLite by default; it is easy for Django users as such it won’t require any other type of installation. In the case your database choice is different that you have to the following keys in the DATABASE ‘default’ item to match your database connection settings."
+Mention what the Django templates consist of.,"The template is a simple text file.  It can create any text-based format like XML, CSV, HTML, etc.  A template contains variables that get replaced with values when the template is evaluated and tags (% tag %) that control the logic of the template."
+Explain the use of session in Django framework?,"Django provides a session that lets you store and retrieve data on a per-site-visitor basis. Django abstracts the process of sending and receiving cookies, by placing a session ID cookie on the client side, and storing all the related data on the server side."
+List out the inheritance styles in Django.,"In Django, there are three possible inheritance styles:
+
+Abstract Base Classes: This style is used when you only want parent’s class to hold information that you don’t want to type out for each child model.
+Multi-table Inheritance: This style is used If you are sub-classing an existing model and need each model to have its own database table.
+Proxy models: You can use this model, If you only want to modify the Python level behavior of the model, without changing the model’s fields."
+How can you Get the Google cache age of any URL or web page?,"Use the following URL format:
+
+http://webcache.googleusercontent.com/search?q=cache:URLGOESHERE
+
+Be sure to replace “URLGOESHERE” with the proper web address of the page or site whose cache you want to retrieve and see the time for."
+What is map function in Python?,"map function executes the function given as the first argument on all the elements of the iterable given as the second argument. If the function given takes in more than 1 arguments, then many iterables are given. "
+Is python numpy better than lists?," We use python numpy array instead of a list because of the below three reasons:
+
+Less Memory
+Fast
+Convenient"
+What is the difference between NumPy and SciPy?,"In an ideal world, NumPy would contain nothing but the array data type and the most basic operations: indexing, sorting, reshaping, basic elementwise functions, et cetera.
+All numerical code would reside in SciPy. However, one of NumPy’s important goals is compatibility, so NumPy tries to retain all features supported by either of its predecessors.
+Thus NumPy contains some linear algebra functions, even though these more properly belong in SciPy. In any case, SciPy contains more fully-featured versions of the linear algebra modules, as well as many other numerical algorithms."
+How do you make 3D plots/visualizations using NumPy/SciPy?,"Like 2D plotting, 3D graphics is beyond the scope of NumPy and SciPy, but just as in the 2D case, packages exist that integrate with NumPy. Matplotlib provides basic 3D plotting in the mplot3d subpackage, whereas Mayavi provides a wide range of high-quality 3D visualization features, utilizing the powerful VTK engine."
+What is the maximum possible length of an identifier?,Identifiers can be of any length.
+Why are local variable names beginning with an underscore discouraged?,"As Python has no concept of private variables, leading underscores are used to indicate variables that must not be accessed from outside the class."
+When will the else part of try-except-else be executed?,The else part is executed when no exception occurs.
+Define python?,Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.
+Definition of python?,"Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together"
+What is slicing in Python?,Start is the starting index from where to slice a list or tuple
+What are unittests in Python?,Unittest is a unit testing framework of Python.
+What is the use of help() and dir() functions?,"help() function in Python is used to display the documentation of modules, classes, functions, keywords, etc. If no parameter is passed to the help() function, then an interactive help utility is launched on the console. 
+dir() function tries to return a valid list of attributes and methods of the object it is called upon. It behaves differently with different objects, as it aims to produce the most relevant data, rather than the complete information."
+What are generators in Python?,"Generators are functions that return an iterable collection of items, one at a time, in a set manner. Generators, in general, are used to create iterators with a different approach. They employ the use of yield keyword rather than return to return a generator object."
+What is split() and join() functions in Python?,You can use join() function to join a list of strings based on a delimiter to give a single string.You can use split() function to split a string based on a delimiter to a list of strings.
+How to delete a file in Python?,Use command os.remove(file_name)
+What are iterators in Python?,"Iterator is an object.It remembers its state i.e., where it is during iteration (see code below to see how)"
+What are unittests in Python?,unittest is a unit testing framework of Python.
+What is the use of help() and dir() functions?,"help() function in Python is used to display the documentation of modules, classes, functions, keywords, etc. If no parameter is passed to the help() function, then an interactive help utility is launched on the console."
+ow can you share global variables across modules?,"To share global variables across modules within a single program, create a special module.Import the config module in all modules of your application. The module will be available as a global variable across modules."
+Explain how can you make a Python Script executable on Unix?,"To make a Python Script executable on Unix, you need to do two things, 
+
+Script file's mode must be executable, and the first line must begin with #"
+How can you access a module written in Python from C?,"You can access a module written in Python from C by following method,Module = PyImport_ImportModule(""<modulename>"");"
+What is the difference between a module and a package in Python?,"Each Python program file is a module that imports other modules like objects. Thus, a module is a way to structure the program. The folder of a Python program is called a package of modules."
+What are the built-in types available in Python?,"One of the most common python interview question, There are mutable and immutable built-in types. 
+
+The mutable ones include: 
+
+List 
+Sets 
+Dictionaries 
+The immutable types include: 
+
+Strings 
+Tuples 
+Numbers"
+What are decorators in Python?,A Python decorator is a specific change made in the Python syntax for the easy alteration of functions.
+What is the use of the // operator in Python?,Using the // operator between 2 numbers gives the quotient when the numerator is divided from the denominator. It is called the Floor Division operator.
+What is the range() function and what are its parameters?,"The range() function is used to generate a list of numbers. Only integer numbers are allowed, and hence, parameters can be both negative and positive. The following parameters are acceptable: 
+
+range(stop) 
+
+Where ‘stop’ is the no. of integers to generate, starting from 0. Example: range(5) == [0,1,2,3,4] 
+
+range([start], stop[, step]) 
+
+Start: gives the starting no. of the sequence 
+
+Stop: specifies the upper limit for the sequence 
+
+Step: is the incrementing factor in the sequence"
+What is the use of %s?,%s is a format specifier which transmutes any value into a string.
+What is GIL?,"GIL or the Global Interpreter Lock is a mutex, used to limit access to Python objects. It synchronizes threads and prevents them from running at the same time."
+What are the key features of Python?,"It is one of the common python interview questions. Python is an open-source, high-level, general-purpose programming language. Since it is a general-purpose programming language and it comes with an assortment of libraries, you can use Python for developing almost any type of application. 
+
+Some of its key features are: 
+
+Interpreted 
+Dynamically-typed 
+Object-oriented 
+English-like syntax"
+What is PYTHONPATH?,"PYTHONPATH is an environment variable that is used to incorporate additional directories when a module/package is imported. Whenever a module/package is imported, PYTHONPATH is used to check if the imported modules are present in the existing directories. Usually, the interpreter uses PYTHONPATH to determine which module to load. 
+"
+What are python modules? Name some commonly used built-in modules in Python?,"Python modules are files containing Python code that can be either function classes or variables. These modules are Python files having a .py extension. Modules can include a set of functions, classes, or variables that are both defined and implemented. You can import and initialize a module using the import statement, learning python tutorial will let us know more about python modules. 
+
+Here are some of the commonly used built-in modules in Python: 
+
+os 
+sys 
+math 
+random 
+data time 
+JSON"
+What is PEP 8?,"PEP or Python Enhancement Proposal is a set of rules that specify how to format Python code for maximum readability. It is an official design document that provides relevant information to the Python Community, such as describing a new Python feature or a Python process. PEP 8 is an important document that includes the style guidelines for Python Code. Anyone who wishes to contribute to the Python open-source community must strictly abide by these style guidelines."
+What is an Expression?,"An expression Can be defined as a combination of variables, values operators a call to functions. It is a sequence of operands or operators like a + B – 5 is called an expression. Python supports many such operators for combining data object into an express."
+What are the escape sequences in Python?,"Python strings, the backslash “\” could be a special character, also called the “escape” character. it’s utilized in representing certain whitespace characters: “\t” may be a tab, “\n” could be a newline, and “\r” could be a printing operation. Conversely, prefixing a special character with “\” turns it into a standard character."
+How will you get all the keys from the dictionary?,"Using dictionary.keys() function, we can get all the keys from the dictionary object."
+How will you get all the values from the dictionary?,"Using dictionary.values() function, we can get all the values from the dictionary object."
+How will you convert a string to an int in python?,int(x) - Converts x to an integer. base specifies the base if x is a string.
+What is the purpose of ** operator?,** Exponent ? Performs exponential (power) calculation on operators. a**b = 10 to the power 20 if a = 10 and b = 20.
+What is the purpose of not in operator?,"not in ? Evaluates to true if it does not finds a variable in the specified sequence and false otherwise. x not in y, here not in results in a 1 if x is not a member of sequence y."
+What is the purpose continue statement in python?,continue statement ? Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+What we call a function which is incomplete version of a function?,Stub.
+When a function is defined then the system stores parameters and local variables in an area of memory. What this memory is known as?,Stack
+When does a new block begin in python?,A block begins when the line is intended by 4 spaces.What does pass operation do?
+What does pass operation do?,Pass indicates that nothing is to be done i.e. it signifies a no operation.
+What are the applications of Python?,"Python is used in various software domains some application areas are like Web and Internet Development, GUI based desktop applications,image processing and graphic design applications"
+What do you mean by Python literals?,Literals can be defined as a data which is given in a variable or constant.
+What are string literals,String literals are formed by enclosing text in the single or double quotes
+What is zip() function in Python?,"Python zip() function returns a zip object, which maps a similar index of multiple containers. It takes an iterable, convert into iterator and aggregates the elements based on iterables passed. It returns an iterator of tuples."
+What is Python's parameter passing mechanism?,"There are two parameters passing mechanism in Python: 
+
+1)Pass by references 
+2)Pass by value"
+What is the difference between remove() function and del statement?,"You can use the remove() function to delete a specific object in the list.If you want to delete an object at a specific location (index) in the list, you can either use del or pop."
+What is swapcase() function in the Python?,"It is a string's function which converts all uppercase characters into lowercase and vice versa. It is used to alter the existing case of the string. This method creates a copy of the string which contains all the characters in the swap case. If the string is in lowercase, it generates a small case string and vice versa. It automatically ignores all the non-alphabetic characters."
+How to remove whitespaces from a string in Python?,"To remove the whitespaces and trailing spaces from the string, Python providies strip([str]) built-in function. This function returns a copy of the string after removing whitespaces if present."
+Why do we use join() function in Python?,The join() is defined as a string method which returns a string value. It is concatenated with the elements of an iterable. It provides a flexible way to concatenate the strings.
+what is shuffle() method?,"This method shuffles the given string or an array. It randomizes the items in the array. This method is present in the random module. So, we need to import it and then we can call the function. It shuffles elements each time when the function calls and produces different output."
+What is the use of break statement?,"It is used to terminate the execution of the current loop. Break always breaks the current execution and transfer control to outside the current block. If the block is in a loop, it exits from the loop, and if the break is in a nested loop, it exits from the innermost loop."
+What is tuple in Python?,"A tuple is a built-in data collection type. It allows us to store values in a sequence. It is immutable, so no change is reflected in the original data. It uses () brackets rather than [] square brackets to create a tuple. We cannot remove any element but can find in the tuple. We can use indexing to get elements. It also allows traversing elements in reverse order by using negative indexing. Tuple supports various methods like max(), sum(), sorted(), Len() etc."
+Which are the file related libraries/modules in Python?,"The Python provides libraries/modules that enable you to manipulate text files and binary files on the file system. It helps to create files, update their contents, copy, and delete files. The libraries are os, os.path, and shutil."
+What are the different file processing modes supported by Python?,"Python provides three modes to open files. The read-only, write-only, read-write and append mode. 'r' is used to open a file in read-only mode, 'w' is used to open a file in write-only mode, 'rw' is used to open in reading and write mode, 'a' is used to open a file in append mode. If the mode is not specified, by default file opens in read-only mode."
+How to create a Unicode string in Python?,"In Python 3, the old Unicode type has replaced by ""str"" type, and the string is treated as Unicode by default. We can make a string in Unicode by using art.title.encode(""utf-8"") function."
+What is a negative index in Python?,"Python sequences are accessible using an index in positive and negative numbers. For example, 0 is the first positive index, 1 is the second positive index and so on. For negative indexes -1 is the last negative index, -2 is the second last negative index and so on."
+What is the shortest method to open a text file and display its content?,"The shortest way to open a text file is by using ""with"" command"
+What is the usage of enumerate () function in Python?,The enumerate() function is used to iterate through the sequence and retrieve the index position and its corresponding value at the same time.
+what are the rules for local and global variables in Python?,"Local variables: If a new value is assigned by a variable within the function's body, it is assumed to be local.
+
+Global variables: These are the variables that are only referenced inside a function are implicitly global."
+What is scope in python?,"Local variables: If a new value is assigned by a variable within the function's body, it is assumed to be local.
+
+Global variables: These are the variables that are only referenced inside a function are implicitly global."
+What are functions in Python?,"Functions in Python refer to blocks that have organised, and reusable codes to perform single, and related events. Functions are important to create better modularity for applications which reuse high degree of coding. Python has a number of built-in functions like print(). However, it also allows you to create user-defined functions."
+What is Pandas?,"Pandas is an open source python library which has a very rich set of data structures for data based operations. Pandas with it’s cool features fits in every role of data operation, whether it be academics or solving complex business problems. Pandas can deal with a large variety of files and is one of the most important tools to have a grip on."
+What are dataframes?,A pandas dataframe is a data structure in pandas which is mutable. Pandas has support for heterogeneous data which is arranged across two axes.( rows and columns).
+What is a Pandas Series?,"Series is a one dimensional pandas data structure which can data of almost any type. It resembles an excel column. It supports multiple operations and is used for single dimensional data operations. 
+"
+What is pandas groupby?,"A pandas groupby is a feature supported by pandas which is used to split and group an object. Like the sql/mysql/oracle groupby it used to group data by classes, entities which can be further used for aggregation. A dataframe can be grouped by one or more columns."
+What kind of joins does pandas offer?,"Pandas has a left join, inner join, right join and an outer join."
+How to merge dataframes in pandas?,Merging depends on the type and fields of different dataframes being merged. If data is having similar fields data is merged along axis 0 else they are merged along axis 1.
+What is a classifier?,A classifier is used to predict the class of any data point. Classifiers are special hypotheses that are used to assign class labels to any particular data points. A classifier often uses training data to understand the relation between input variables and the class. Classification is a method used in supervised learning in Machine Learning.
+how do you convert a string into lowercase?,All the upper cases in a string can be converted into lowercase by using the method: string.lower()
+How can you capitalize the first letter of a string?,We can use the capitalize() function to capitalize the first character of a string. If the first character is already in capital then it returns the original string.
+How can you insert an element at a given index in Python?,Python has an inbuilt function called the insert() function.It can be used used to insert an element at a given index.
+What is recursion?,"Recursion is a function calling itself one or more times in it body. One very important condition a recursive function should have to be used in a program is, it should terminate, else there would be a problem of an infinite loop."
+How will you remove duplicate elements from a list?,"There are various methods to remove duplicate elements from a list. But, the most common one is, converting the list into a set by using the set() function and using the list() function to convert it back to a list, if required."
+what are Python List Comprehension,"List comprehensions are used for transforming one list into another list. Elements can be conditionally included in the new list and each element can be transformed as needed. It consists of an expression leading a for clause, enclosed in brackets. for ex: list = [i for i in range(1000)]"
+What is the bytes() function?,"The bytes() function returns a bytes object. It is used to convert objects into bytes objects, or create empty bytes object of the specified size."
+What is a map() function in Python?,"The map() function in Python is used for applying a function on all elements of a specified iterable. It consists of two parameters, function and iterable. The function is taken as an argument and then applied to all the elements of an iterable(passed as the second argument). An object list is returned as a result."
+What are the tools present to perform statics analysis?,"The two static analysis tool used to find bugs in Python are: Pychecker and Pylint. Pychecker detects bugs from the source code and warns about its style and complexity.While, Pylint checks whether the module matches upto a coding standard."
+What is the difference between tuple and dictionary?,"One major difference between a tuple and a dictionary is that dictionary is mutable while a tuple is not. Meaning the content of a dictionary can be changed without changing it’s identity, but in tuple that’s not possible."
+How can an object be copied in Python?,"Not all objects can be copied in Python, but most can. We ca use the “=” operator to copy an obect to a variable."
+What are module and package in Python?,"Modules are the way to structure a program. Each Python program file is a module, importing other attributes and objects. The folder of a program is a package of modules. A package can have modules or subfolders."
+What is object() function in Python?,In Python the object() function returns an empty object. New properties or methods cannot be added to this object.
+What is the difference between NumPy and SciPy?,"NumPy stands for Numerical Python while SciPy stands for Scientific Python. NumPy is the basic library for defining arrays and simple mathematica problems, while SciPy is used for more complex problems like numerical integration and optimization and machine learning and so on."
+What is the type () in Python?,type() is a built-in method which either returns the type of the object or returns a new type object based on the arguments passed.
+What is reindexing in pandas?,Reindexing is the process of re-assigning the index of a pandas dataframe.
+What is vstack() in numpy?,vstack() is a function to align rows vertically. All rows must have same number of elements.
+How do you create an empty class in Python?,To create an empty class we can use the pass command after the definition of the class object. A pass is a statement in Python that does nothing.
+How can you get a random number in python?,"To generate a random, we use a random module of python."
+How do I prepare for a Python interview?,"To prepare for a Python Interview, you must know syntax, key-words, functions and classes, data types, basic coding, and exception handling. Having basic knowledge regarding all the libraries, IDE’s used and reading blogs related to Python Tutorial’s will help you going forward. Showcase your example projects, brush up your basic skills about algorithms, data structures. This will help you stay prepared."
+What is print in python,"The print() function prints the specified message to the screen, or other standard output device. The message can be a string, or any other object, the object will be converted into a string before written to the screen."
+What is list ?,Lists are used to store multiple items in a single variable.
