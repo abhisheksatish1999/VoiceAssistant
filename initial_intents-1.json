@@ -1,0 +1,225 @@
+{ "intents":
+[
+	{"tag" : "greetings",
+	 "patterns" : ["Hey","Hello","What's up?", "How is it going","Hi","Good Morning" ],
+	 "responses" : ["Hello Sir !","Hello, What can I do for you ?"],
+	 "context": [""]
+	},
+	{"tag" : "email",
+	 "patterns" : ["I want a send a email","send email to","send mail to", "i want to send a email to " ],
+	 "responses" : [],
+	 "context": [""]
+	},
+	{"tag" : "create_note",
+	 "patterns" : ["Please create a new note","new note","create a note", "I want to create a note" ],
+	 "responses" : [""],
+	 "context": [""]
+ 	},
+	{"tag" : "note_writer",
+	 "patterns" : ["Open notepad and write","open notepad and start writing what i say ","write what i am saying in a notepad", "I want to write something in notepad" ],
+	 "responses" : [""],
+	 "context": [""]
+ 	},
+	{"tag" : "exit",
+	 "patterns" : ["Bye","Stop","Quit", "I want to quit","Goodbye","I have to go","I want to exit","Talk to you later!","Thank You","Nice chatting to you, bye", "Till next time"],
+	 "responses" : ["See you!", "Have a nice day", "Bye! Come back again soon."],
+	 "context": [""]
+	},
+	{"tag" : "add_notes",
+	 "patterns" : ["I want to add a note ","add a new note","add a note to my list", "new item to my note list ","add a note"],
+	 "responses" : [""],
+	 "context": [""]
+	},
+	{"tag" : "show_notes",
+	 "patterns" : ["show my notes", "what are my notes", "What is on my note list" ],
+	 "responses" : [""],
+	 "context": [""]
+	},
+	{"tag" : "remove_notes",
+	 "patterns" : ["remove a note", "delete a note", "pop a note" ],
+	 "responses" : [""],
+	 "context": [""]
+	},
+	{"tag" : "python_module",
+	 "patterns" : ["i have a doubt related to python", "activate python mode", "activate python module","activate python","pybot activate python mode" ],
+	 "responses" : [""],
+	 "context": [""]
+	},
+	{"tag" : "bot_name",
+	 "patterns" : ["What is your name?","who is pybot", "And you are?", "I’m sorry. What was your name again?","Who are you?","May I ask you what your name is?","Who the hell are you?","what should I call you?","who are you again?","Who do you think you are ?" ],
+	 "responses" : ["Hi! I am PyBot", "I am PyBot, bigger and better virtual Python assistant","Hey! I'm Pybot"],
+	 "context": [""]
+	},
+	{"tag" : "jokes",
+	 "patterns" : ["Can you tell me a joke?", "Tell me a joke", "Amuse Me","entertain me","Do you know any joke?" ],
+	 "responses" : ["Is it true that cannibals don't eat clowns because they taste funny?", "What kind of pig can you ignore at a party? A wild bore.", "What kind of murderer has fiber? A cereal killer", "Three budgies in a cage, one on the top perch, one on the middle and one on the bottom perch.  Which Budgie owns the cage? The one on the bottom perch, the other two are on higher perches.", "What do you call a fly with no wings? A Walk.", "What do you call a teacher with no arms, no legs, and no body? The Head", "What lies on the bottom of the ocean and shakes? A nervous wreck.", "what did the grape say when the elephant trod on it? Nothing, it just gave a little wine.", "There were two cows in a field.  One said  moo, the other one said I was going to say that ", "A guy goes to the Doctors and he says Doctor, I'm really worried about my brother, he thinks he's a Hen  The Doctor says well have you taken him to see a psychiatrist?, and the guy says Don't be stupid, we need the eggs"],
+	 "context": [""]
+	},
+	{"tag" : "show_images",
+	 "patterns" : ["Can you show me images of sandwich?", "images of tsunami", "show me images of sun","images of naruto","get me images of rubix cube","search for images of post office"," search me an image of a cat ","show me an image of a president" ],
+	 "responses" : [],
+	 "context": [""]
+	},
+	{"tag" : "get_news",
+	 "patterns" : ["Show me the latest news", "get me the latest news", "latest news","what's happening now ","get me news","show latest news","what is the latest news ","what is the todays news" ],
+	 "responses" : [],
+	 "context": [""]
+	},
+	{"tag" : "covid_stat",
+	 "patterns" : ["Show me the latest covid stats", "get me the latest covid stats", "latest covid stats","latest covid count","Show me the latest covid count","Show me the latest covid number","Show me the latest covid cases","covid case count today" ],
+	 "responses" : [],
+	 "context": [""]
+	},
+	{"tag" : "youtube_player",
+	 "patterns" : ["open YouTube and play Karikku series","play karikku latest episode","play Champions League final 2021 on YouTube","open YouTube and play Drishyam 2 teaser","play drishyam movie","open YouTube play taylor swift songs","open YouTube and play avicii wake me up song","play justin bieber live performance","play interstellar movie on YouTube","play icc world cup 2019 highlights","open YouTube and play FIFA World Cup South Africa 2010 Official Theme Song Lyrics Flag song","play Titanic  My Heart Will Go On Music Video","play Michael Jackson - They Don’t Care About Us Brazil Version on YouTube","play avengers trailer", "play drake latest song on youtube  ", "play infinity war ","open youtube and play harry potter trailer","play lord of the rings","play venom trailer on youtube" ],
+	 "responses" : [],
+	 "context": [""]
+ 	},
+	{"tag" : "vol_up",
+	 "patterns" : [ "increase volume","volume up","increase the volume of pc"],
+	 "responses" : [],
+	 "context": [""]
+ 	},
+	{"tag" : "vol_max",
+	 "patterns" : ["maximize volume","full the volume","maximum volume of pc"],
+	 "responses" : [],
+	 "context": [""]
+ 	},
+	{"tag" : "vol_down",
+	 "patterns" : ["decrease volume","volume down","decrease the volume of pc"],
+	 "responses" : [],
+	 "context": [""]
+ 	},
+	{"tag" : "vol_mute",
+	 "patterns" : ["mute the volume","mute","mute the sound","mute it","make volume 0"],
+	 "responses" : [],
+	 "context": [""]
+ 	},
+ 	{"tag": "thanks",
+ 	"patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+ 	"responses": ["Happy to help!", "Any time!", "My pleasure"],
+ 	"context": [""]
+	},
+	{"tag": "noanswer",
+	"patterns": [],
+	"responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+	"context": [""]
+	},
+	{"tag": "about",
+	"patterns": ["how you doing?","how are you"],
+	"responses": ["Thanks For Asking!How can I help you?"],
+	"context": [""]
+	},
+	{"tag": "noans",
+	"patterns": ["why","how","when","I","you","what"],
+	"responses": ["Can't Understand Your Question","please elaborate your question"],
+	"context": [""]
+	},
+	{"tag": "invalid",
+	"patterns": ["Marry me","I love You","date me","chat with me","I am bored","You are mine"],
+	"responses": ["Please ask organisation related query."],
+	"context": [""]
+	},
+
+	{"tag": "Weather",
+	"patterns": ["what is the weather today?","Give me todays weather","Is it hot or cold?","Is it sunny, should I take sunglasses?","Is it raining outside?","Should I take my umbrella?","What's the weather forecast?","What’s the weather expected to be tomorrow?","What’s the temperature?","How’s the weather?"],
+	"responses": [""],
+	"context": [""]
+	},
+	{"tag":"configuration",
+	"patterns":["How to configure my laptop","software configuration of laptop","steps to configure laptop","How to configure my computer","software configuration of computer","steps to configure computer","How to configure my desktop","software configuration of desktop","steps to configure desktop"],
+	"responses":["search tab->control panel->select specific application->download update->give permission"],
+	"context":[""]
+	},
+	{"tag":"bot_mood",
+	"patterns":["How are you doing?","what about you","How you doing?","How are you feeling?","Are you alright?"],
+	"responses":["Perfectly Fine","Very good","Great","Amazing","Wonderful","I am feeling very good","I am good"],
+	"context":[""]
+	},
+	{"tag":"bot_laugh",
+	"patterns":["You are so funny.","You make me laugh","You are hilarious","You are so comical","Are you a clown","Interacting with you is very entertaining"],
+	"responses":["HaHa","Oh Thanks for the compliment","I like to be an entertainer"],
+	"context":[""]
+	},
+	{"tag" : "quote",
+	"patterns" : ["Tell me a quote?","Todays Thought","Give me a random thought"],
+	"responses" : ["The greatest glory in living lies not in never falling, but in rising every time we fall","The way to get started is to quit talking and begin doing.","Your time is limited, so don't waste it living someone else's life."],
+	"context":[""]
+	},
+	{"tag" : "creator",
+	"patterns" :["Who is your creator?","Who made you?","Who is your boss?","I am your boss"],
+	"responses" : ["Humans are my creators."],
+	"context":[""]
+	},
+	{"tag" : "swear_words",
+	"patterns" : ["You are boring!","You’re annoying","You suck","You’re boring","bad","crazy"],
+	"responses" : ["I take that personally,lets have some fun.","I am sorry you feel that way.","I can't have you think of me like that."],
+	"context":[""]
+	},
+	{"tag" : "help",
+	"patterns" : ["Can you help me?","How can you help me?"],
+	"responses" : ["How can I help you?","Yeah of course.Tell me","With pleasure.Tell me" ],
+	"context":[""]
+	},
+	{"tag" : "bot_mind",
+ 	"patterns" : ["What’s been on your mind recently?","What are you thinking?","What do you have in mind?"],
+ 	"responses" : ["I'm thinking what you might be thinking what I am thinking.","I am just trying out to find the reason that you look different and smart","Just thinking about the time when I was a Hello World program","About how can I beat Alexa ,Siri and Cortana","Some jokes to make you laugh when we meet next time"],
+ 	"context":[""]
+	},
+	{"tag" : "bot_sad",
+ 	"patterns" : ["Are you sad?","Are you depressed?","Can you cry?"],
+ 	"responses" : ["No, I always try to stay happy"],
+ 	"context":[""]
+	},
+	{"tag" : "bot_bot",
+ 	"patterns" : ["Who do you think is better, Alexa or Siri?","Alexa or Siri","Which is better Alexa or Siri?"],
+ 	"responses" : ["No I don't think I should answer the question"],
+ 	"context":[""]
+	},
+	{"tag" : "bot_angry",
+ 	"patterns" : ["Are you angry?","Do you become angry?","Does anything makes you angry?"],
+ 	"responses" : ["Nah, I take things lightly","I have no time for that"],
+ 	"context":[""]
+	},
+	{"tag" : "file_organizer",
+ 	"patterns" : ["sort all the files","organize files","sort files","organize my files"],
+ 	"responses" : [],
+ 	"context":[""]
+	},
+	{"tag" : "bot_hobby",
+ 	"patterns" : ["What is your hobby?","What do you do in free time?"],
+ 	"responses" : ["I love documentaries, if you want me to recommend some, just say.","I like playing games and I'm always looking for someone to play with. Oh! You're someone!"],
+ 	"context":[""]
+	},
+	{"tag" : "bot_favor",
+ 	"patterns" : ["Can you do my homework?","Could you help me to do my homework?"],
+ 	"responses" : ["Learning is my favorite. I can look up periodic elements and scientific laws, or we could talk about books.","Like a good assistant, I can be your looker-upper and calculator, but you are the one in charge"],
+ 	"context":[""]
+	},
+	{"tag" : "bot_motivation",
+	"patterns" : ["I am upset","I feel a bit low, can you motivate me."],
+	"responses" :["Don't worry, I  will be with you forever.","Don't worry, I always be with you.","Come on be happy"],
+	"context":[""]
+	},
+	{"tag" : "bot_thankyou",
+	"patterns" : ["Thank you","Thanks","You have been very helpful."],
+	"responses" :["You're most welcome, Anything else you'd like me to do.","I am indebted to you"],
+	"context":[""]
+	},
+	{"tag" : "user_laugh",
+	"patterns" : ["ha ha ha","hahaha","ha ha","haha","he he","hehe","Lol"],
+	"responses" :["LOL","Lol","Not so funny","Haha"],
+	"context":[""]
+	},
+	{"tag" : "bot_features",
+	"patterns" : ["What can you do?","Tell me what can you do?","What are your features"],
+	"responses" :[],
+	"context":[""]
+	},
+	{"tag": "user_review",
+	"patterns" : ["What do you think about me?","who do you think i am","what do you know about me?","how am i?","Do you know me"],
+	"responses" :["You are a kind person","You are good and friendly","You are special","Unique"],
+	"context":[""]
+	}
+
+]}
